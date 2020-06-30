@@ -1,4 +1,4 @@
- $(function() {
+$(function() {
     /*date*/
     var dateDiff = function(oldDate) {
         oldDate = new Date(oldDate)
