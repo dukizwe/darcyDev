@@ -1,0 +1,163 @@
+.home-content {
+    width: 80%;
+    height: 92vh;
+    background: $initial_color;
+    border-radius: 10px;
+    margin: auto;
+    .section-content {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .presentation {
+            width: 60%;
+            /*border-left: 5px solid #cdf2f8;*/
+            padding-left: 30px;
+            margin-right: 40px;
+            .presentation-name {
+                /*font-family: 'Rock Salt', cursive;
+                color: #000;
+                font-size: 30px;*/
+                > div {
+                    margin-bottom: 20px;
+                }
+                .hello {
+                    color: #333;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 50px;
+                    font-weight: 200;
+                    margin-bottom: 10px;
+                    letter-spacing: 3px;
+                }
+                .name {
+                    font-family: 'Montserrat', sans-serif;
+                    color: #000;
+                    font-size: 30px;
+                    font-weight: 200;
+                    margin-bottom: 0;
+                    span {
+                        color: #089ECA;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 700;
+                    }
+                }
+                .hero_name {
+                    font-size: 18px;
+                    margin-bottom: 40px;
+                }
+                .dev_type {
+                    display: inline-block;
+                }
+            }
+            .description > div {
+                text-align: center;
+                margin: 20px 0;
+            }
+            .description {
+                width: 418px;
+                font-size: 17px;
+                a {
+                }
+                button {
+                    transition: all 0.2s ease-out 0s;
+                    color: #000;
+                    letter-spacing: 1.5px;
+                    font-family: 'Roboto', sans-serif;
+                    cursor: pointer;
+                    box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
+                    outline: none;
+                    border-width: 1px;
+                    font-size: 16px;
+                    border-style: initial;
+                    border-color: transparent;
+                    border-image: initial;
+                    border-radius: 10rem;
+                    padding: 1rem 2rem;
+                    margin: 0rem;
+                    &:hover {
+                        transform: translateY(-3px);
+                        cursor: pointer;
+                    }
+                }
+                .competences-direction {
+                    button {
+                        background: #70c5d4;
+                    }
+                }
+                .contact-direction {
+                    button {
+                        background: #faed;
+                    }
+                }
+            }
+            .editor-line {
+                display: flex;
+                background: #122e26;
+                padding: 10px;
+                border-radius: 2px;
+                font-size: 20px;
+                text-align: left;
+                margin-top: 0;
+                .line {
+                    color: #aca6a6;
+                }
+                .typed-text {
+                    color: #fff;
+                    margin-left: 20px;
+                }
+                .cursor {
+                    display: inline-block;
+                    background: #fff;
+                    height: 5px;
+                    width: 2px;
+                    background: #ccc;
+                    height: 22px;
+                    margin: 0px 0 0 2px;
+                    animation: blink 1s infinite;
+                    &.typing {
+                        animation: none;
+                    }
+                }
+            }
+        }
+        .my-picture {
+            width: 350px;
+            padding: 5px 0;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .scrollDown {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        bottom: 20px;
+        left: 50%;
+        animation: goDown 1s linear infinite;
+        a {
+            color: #1890ff;
+        }
+    }
+}
+
+@keyframes blink {
+    0% {background: #ccc}
+    45% {background: #ccc;}
+    50% {background: transparent;}
+    99% {background: transparent;}
+    100% {background: #ccc;}
+}
+@keyframes goDown {
+    15%, 20% {
+        transform: translateY(-4px);
+    }
+    50% {
+        transform: translateY(4px);
+    }
+     100% {
+        transform: translateY(4px);
+    }
+}

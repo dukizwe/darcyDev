@@ -11,9 +11,8 @@
 </head>
 <body>
     <div class="site-container" id="accueil" data-spy>
-        <!--home-->
-        <div class="home-container" >
-            <header>
+        <header>
+            <div class="content">
                 <div class="site-logo">
                     <a href="index.html"><img src="images/logo.png" alt=""></a>
                 </div>
@@ -25,37 +24,69 @@
                     <a href="#contact">Contact</a>
                 </nav>
                 <div class="show-nav-btn"><i class="fas fa-bars"></i></div>
-            </header>
-            <div class="home-content">
-                <div>
-                    <div class="section-content">
-                        <div class="presentation">
-                            <h4 class="presentation-name">
-                                Je suis un Développeur Web
-                            </h4>
-                            <div class="description">
-                                Vous cherchez un dévéloppeur web,
-                                ça tombe bien ,freelance dans le web depuis plus de <span class="webdate"></span> ans,
-                                n'hésiter pas à regarder
-                                <div class="competences-direction">
-                                    <a href="#activites" class="">Mes réalisations</a>
-                                </div>
-                                si mon profil vous interesse, n'hésiter pas à
-                                <div class="contact-direction">
-                                    <a href="#contact" class="">Me Contacter</a>
-                                </div>
+            </div>
+        </header>
+        <div class="home-content">
+            <div class="section-content">
+                <div class="presentation">
+                    <div class="presentation-name">
+                        <div class="hello">
+                            Bonjour,
+                        </div>
+                        <div class="name">
+                            Je suis <span>Darcy</span>
+                        </div>
+                        <div class="hero_name">
+                            Un
+                            Développeur Web PHP
+                            <div class="dev_type">
+                                Fullstack
                             </div>
-                            <div class="editor-line">
-                                <span class="line">1</span>
-                                <span class="typed-text"></span>
-                                <span class="cursor"></span>
+                            <div class="emoji  emoji--wow">
+                                <div class="emoji__face">
+                                    <div class="emoji__eyebrows"></div>
+                                    <div class="emoji__eyes"></div>
+                                    <div class="emoji__mouth"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="my-picture">
-                            <img src="images/me.JPG">
+                        <!--
+                        <div class="emoji  emoji--yay">
+                            <div class="emoji__face">
+                                <div class="emoji__eyebrows"></div>
+                                <div class="emoji__mouth"></div>
+                            </div>
+                        </div>
+                    -->
+                    </div>
+                    <div class="description">
+                        Vous cherchez un dévéloppeur web,
+                        ça tombe bien ,freelance dans le web depuis plus de <span class="webdate"></span> ans,
+                        n'hésiter pas à regarder
+                        <div class="competences-direction">
+                            <a href="#activites" class=""><button>Mes réalisations</button></a>
+                        </div>
+                        si mon profil vous intéresse, n'hésiter pas à
+                        <div class="contact-direction">
+                            <a href="#contact" class=""><button>Me Contacter</button></a>
                         </div>
                     </div>
+                    <div class="editor-line">
+                        <span class="line">1</span>
+                        <div class="typed-text"></div> <!--<?= true ? 'Hello world' : '404' ?> if(world.hasCorona()) people.stayHome()-->
+                        <span class="cursor"></span>
+                    </div>
                 </div>
+                <div class="my-picture">
+                    <img src="images/me.JPG">
+                </div>
+            </div>
+            <div class="scrollDown">
+                <a href="#competences">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14 scrollDown__StyledIcon-sc-1qknqcw-1 krYopr" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                    </svg>
+                </a>
             </div>
         </div>
         <!-- competences-->
@@ -392,8 +423,8 @@
                         mon vrai nom est Darcy Dukizwe, j'ai <span class="age">19</span> ans,
                         je suis diplomé dans l'informatique de maintenance, 
                         il y a <span class="passed-year"></span> année que j'ai terminé mes études
-                        peut être que mon profil vous a interessé,
-                        n'hésitez pas non plus à m'ecrire un salut sur mes réseux sociaux, Tchao
+                        peut être que mon profil vous a intéressé,
+                        n'hésitez pas à m'écrire un salut sur mes réseux sociaux, Tchao
                     </p>
                 </div>
                 <div class="contact-info">
