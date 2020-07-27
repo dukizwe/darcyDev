@@ -1,0 +1,190 @@
+/*competences*/
+.competences-container {
+    font-family: sans-serif;
+    padding: 0;
+    width: 80%;
+    margin: auto;
+    img {
+        width: 90px;
+    }
+    .competences-title {
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .competences-content {
+        background: #fff;
+        padding: 10px 0;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
+    }
+    .languages-container {
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        margin: auto;
+        padding: 10px 0;
+        border-radius: 10px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-flow: row wrap;
+        display: flex;
+        justify-content: center;
+
+        .lang-description {
+            text-align: center;
+            font-family: "PT Sans", sans-serif;
+            margin-top: 10px;
+            font-size: 17px;
+            padding: 0 50px 0 50px;
+        }
+        .structure-langs {
+            flex: auto;
+            width: 50%;
+            //margin-left: 15%;
+            .title {
+                color: #777;
+                text-align: center;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            .html-img {
+                width: max-content;
+                margin: auto;
+            }
+            .html-lang {
+                color: #000;
+                text-align: center;
+            }
+        }
+
+        //pour le style
+        .style-langs {
+            flex: auto;
+            width: 50%;
+            .title {
+                color: #777;
+                text-align: center;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            .style-languages {
+                justify-content: space-around;
+                width: 80%;
+                margin: auto;
+            }
+        }
+
+        //js
+        .javascript-langs {
+            width: 50%;
+            margin-top: 50px;
+            .title {
+                color: #777;
+                margin-bottom: 10px;
+                font-size: 20px;
+                text-align: center;
+            }
+            
+            .javascript-languages {
+                justify-content: space-around;
+                width: 80%;
+                margin: auto;
+            }
+        }
+
+        //back-end
+        .back-end-langs {
+            width: 50%;
+            margin-top: 50px;
+            .title {
+                color: #777;
+                margin-bottom: 10px;
+                text-align: center;
+                font-size: 20px;
+            }
+            .php-languages {
+                justify-content: space-around;
+                width: 50%;
+                margin: auto;
+                .lang-php {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+.others {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    background: #fff;
+    border-radius: 4px;
+    font-size: 18px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.languages-img {
+    display: flex;
+}
+.languages-img > div {
+    margin-left: 10px;
+    position: relative;
+}
+.languages-img .kirundi  {
+    margin-left: inherit;
+}
+.others-title{
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    padding: 10px;
+}
+.others .software,
+.others .languages {
+    display: flex;
+}
+.others .software .title,
+.others .languages .title {
+    margin-top: 15px;
+    color: #000;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.others img  {
+    width: 50px;
+    vertical-align: middle;
+}
+.style-langs .style-languages,
+.javascript-langs .javascript-languages,
+.back-end-langs .php-languages {
+    display: flex;
+}
+.others span {
+    position: absolute;
+    background: #000;
+    color: #fff;
+    width: max-content;
+    border-radius: 4px;
+    padding: .5em 1em;
+    font-size: 13px;
+    transition: all .18s ease-out .18s;
+    transform-origin: bottom;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+}
+.others span::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 2px;
+    left: 50%;
+    transform: translate(-50%, 16px) rotate(45deg);
+}
+.languages-img > div:hover span {
+    opacity: 1;
+    transform: translate(-50%, -27px);
+}

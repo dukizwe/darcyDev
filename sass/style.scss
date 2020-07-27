@@ -3,6 +3,7 @@
 @import "emoji";
 @import "header";
 @import "home";
+@import "competences";
 /*home*/
 * {
     box-sizing: border-box;
@@ -87,120 +88,7 @@ html, body {
 @media screen and (max-width: 500px) {
     
 }
-/*competences*/
-.competences-container {
-    font-family: sans-serif;
-    padding: 0;
-    width: 80%;
-    margin: auto;
-}
-.competences-container img {
-    width: 90px;
-}
-.competences-title {
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 5px;
-}
-.competences-content {
-    background: #fff;
-    padding: 10px 0;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
-}
-.languages-container {
-    font-family: 'Roboto', sans-serif;
-    width: 70%;
-    margin: auto;
-    padding: 10px 0;
-    border-radius: 10px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    flex-flow: row wrap;
-    display: flex;
-    justify-content: center;
-}
-.structure-langs {
-    flex: auto;
-    margin-left: 15%;
-}
-.structure-langs .title {
-    color: #777;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-.structure-langs .html-img {
-    width: max-content;
-    margin-left: 10px;
-}
-.structure-langs .html-lang {
-    color: #000;
-    text-align: center;
-}
-.style-langs {
-    flex: auto;
-}
-.style-langs .title {
-    color: #777;
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-.style-langs .style-languages .title {
-    color: #000;
-    font-size: 16px;
-}
-.style-langs .lang-sass .title {
-    margin-top: 25px;
-}
-.javascript-langs {
-    margin-top: 20px;
-}
-.style-langs .style-languages {
-    justify-content: space-around;
-}
-.javascript-languages {
-    flex: auto;
-}
-.javascript-languages > div {
-    margin-left: 50px;
-}
-.javascript-languages > div .title {
-    color: #000;
-    margin-bottom: 0;
-    font-size: 16px;
-}
-.javascript-langs .title {
-    color: #777;
-    margin-bottom: 10px;
-    font-size: 20px;
-    text-align: center;
-}
-.back-end-langs {
-    margin-top: 20px;
-}
-.back-end-langs .title {
-    color: #777;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 20px;
-}
-.back-end-langs .php-languages > div {
-    margin-left: 50px;
-}
-.back-end-langs .php-languages > div .title {
-    color: #000;
-    margin-bottom: 0;
-    font-size: 16px;
-}
-.back-end-langs .lang-php .php-img {
-    margin-top: 25px;
-}
-.back-end-langs .lang-php .title {
-    margin-top: 20px;
-}
-.php-languages {
-    flex: auto;
-}
+
 @media screen and (max-width: 770px) {
     .javascript-languages > div {
         margin-left: 30px;
@@ -251,82 +139,7 @@ html, body {
         margin-left: 20px;
     }
 }
-.others {
-    width: 100%;
-    margin: auto;
-    padding: 10px;
-    display: grid;
-    justify-content: center;
-    background: #fff;
-    border-radius: 4px;
-    font-size: 18px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
-}
-.languages-img {
-    display: flex;
-}
-.languages-img > div {
-    margin-left: 10px;
-    position: relative;
-}
-.languages-img .kirundi  {
-    margin-left: inherit;
-}
-.others-title{
-    text-align: center;
-    color: #000;
-    font-size: 20px;
-    padding: 10px;
-}
-.others .software,
-.others .languages {
-    display: flex;
-}
-.others .software .title,
-.others .languages .title {
-    margin-top: 15px;
-    color: #000;
-    font-size: 18px;
-    margin-right: 5px;
-}
-.others img  {
-    width: 50px;
-    vertical-align: middle;
-}
-.style-langs .style-languages,
-.javascript-langs .javascript-languages,
-.back-end-langs .php-languages {
-    display: flex;
-}
-.others span {
-    position: absolute;
-    background: #000;
-    color: #fff;
-    width: max-content;
-    border-radius: 4px;
-    padding: .5em 1em;
-    font-size: 13px;
-    transition: all .18s ease-out .18s;
-    transform-origin: bottom;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    opacity: 0;
-}
-.others span::before {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: #000;
-    border-radius: 2px;
-    left: 50%;
-    transform: translate(-50%, 16px) rotate(45deg);
-}
-.languages-img > div:hover span {
-    opacity: 1;
-    transform: translate(-50%, -27px);
-}
+
 /*activities*/
 .activities-container {
     font-family: 'Roboto', sans-serif;
