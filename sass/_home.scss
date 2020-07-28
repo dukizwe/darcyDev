@@ -1,3 +1,19 @@
+/*home*/
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background: $initial_color;
+    font-family: 'PT Sans', sans-serif;
+}
+.site-container  {
+    background: rgb(205, 242, 248);
+    background: linear-gradient(49.2deg,#f9ed32 10%,#ee2acd91 55%,#b8c1f5);
+    background: $initial_color;
+}
 .home-content {
     width: 80%;
     height: 92vh;

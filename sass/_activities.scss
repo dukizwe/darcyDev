@@ -1,0 +1,80 @@
+/*activities*/
+.activities-container {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  width: 80%;
+  margin: auto;
+}
+.activities-content {
+  background: #fff;
+  padding: 10px 0;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.activities-title {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+}
+.activities {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.activities > div {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  margin: 5px 3px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.activities > div:hover img {
+  filter: brightness(0.5) blur(1px) brightness(0.5);
+  transform: scale(1.1);
+}
+.activities > div:hover .description {
+  transform: translate(0, -100%);
+}
+.activities > div:hover a.site-direction {
+  transform: translateX(0);
+  opacity: 1;
+}
+.activities-container img {
+  width: 100%;
+  transition: all 1s;
+  border: 1px solid #00000014;
+}
+.activities .description {
+  width: 100%;
+  height: 100%;
+  padding: 10px 5px;
+  color: #fff;
+  text-align: center;
+  transition: transform .18s cubic-bezier(0.42, 0, 0.61, 1.26) .18s;
+  transform-origin: bottom;
+}
+.activities .description .title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #39ad8c;
+}
+.activities .description p {
+  font-size: 18px;
+}
+.activities .description a.site-direction {
+  color: #ffbc00;
+  display: block;
+  font-size: 40px;
+  opacity: 0;
+  transform: translateX(100%);
+  padding: 5px 10px;
+  transition: all 0.8s;
+  transition-delay: .18s;
+  text-decoration: none;
+}
+.activities .description a.site-direction:hover {
+  opacity: 0.5;
+  transition-duration: 0.2s;
+}
