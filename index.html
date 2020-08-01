@@ -22,7 +22,6 @@
                     <a href="#culture">Culture</a>
                     <a href="#contact">Contact</a>
                 </nav>
-                <div class="show-nav-btn"><i class="fas fa-bars"></i></div>
             </div>
         </header>
         <div class="home-content">
@@ -451,16 +450,21 @@
             <div class="contact-form">
                 <div class="from-subject">
                     <div class="form">
-                        <input type="email" placeholder="From">
+                        <input type="email" required>
+                        <span>From</span>
                     </div>
                     <div class="subject">
-                        <input type="text" placeholder="subject">
+                        <input type="text" required>
+                        <span>Subject</span>
                     </div>
                 </div>
                 <div class="message">
-                    <textarea placeholder="message"></textarea>
+                    <div class="text-area">
+                        <textarea required></textarea>
+                        <span>Message</span>
+                    </div>
+                    <div class="btn-send"><button>Envoyer</button></div>
                 </div>
-                <button class="btn-send">Envoyer</button>
             </div>
             <div class="contact-content">
                 <div class="thanking">

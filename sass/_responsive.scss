@@ -1,0 +1,75 @@
+@media only screen and (min-width: 1366px) {
+    .site-container {
+        width: 1330px;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-height: 600px) {
+    .home-content {
+        height: auto;
+        .section-content {
+            top: 0;
+            left: 0;
+            transform: none;
+        }
+        .scrollDown {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 1130px) {
+    header .content,
+    .home-content,
+    .competences-container,
+    .activities-container,
+    .culture-container,
+    .contact-container {
+        width: 90% !important;
+    }
+}
+@media screen and (max-width: 1020px) {
+    header .content,
+    .home-content,
+    .competences-container,
+    .activities-container,
+    .culture-container,
+    .contact-container {
+        width: 95% !important;
+    }
+}
+@media screen and (max-width: 850px) {
+    .home-content {
+        width: 100%;
+        height: auto;
+        position: static;
+        .section-content {
+            display: block;
+            text-align: center;
+            top: 0;
+            left: 0;
+            transform: none;
+            .presentation {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                .description {
+                    width: 60%;
+                    margin: auto;
+                }
+                .editor-line {
+                    width: 80%;
+                    margin: auto;
+                }
+                
+            }
+            .my-picture {
+                width: 80%;
+                margin: auto;
+                margin-top: 10px;
+            }
+        }
+        .scrollDown {
+            display: none;
+        }
+    }
+}

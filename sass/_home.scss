@@ -29,13 +29,9 @@ html, body {
         transform: translate(-50%, -50%);
         .presentation {
             width: 60%;
-            /*border-left: 5px solid #cdf2f8;*/
             padding-left: 30px;
             margin-right: 40px;
             .presentation-name {
-                /*font-family: 'Rock Salt', cursive;
-                color: #000;
-                font-size: 30px;*/
                 > div {
                     margin-bottom: 20px;
                 }
@@ -77,7 +73,7 @@ html, body {
                 a {
                 }
                 button {
-                    transition: all 0.2s ease-out 0s;
+                    transition: transform 0.2s ease-out 0s;
                     color: #000;
                     letter-spacing: 1.5px;
                     font-family: 'Roboto', sans-serif;
@@ -115,7 +111,8 @@ html, body {
                 border-radius: 2px;
                 font-size: 20px;
                 text-align: left;
-                margin-top: 70px;
+                position: relative;
+                top: 10%;
                 .line {
                     color: #aca6a6;
                 }

@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    transition-duration: 0.5s;
+    transition: transform 0.5s;
     &.hidden {
         position: fixed;
         top: 0;
@@ -40,14 +40,14 @@ header {
         nav {
             padding: 20px 0;
             font-family: sans-serif;
-            transition: none;
             a {
                 text-decoration: none;
                 color: #000;
                 padding: 10px 5px;
                 background: linear-gradient(to top, #34b396 0%, #34b396 2px, transparent 2px) no-repeat;
                 background-size: 0 100%;
-                transition: all 0.3s;
+                transition-property: background-size,border,border-radius,background,color;
+                transition-duration: 0.3s;
                 &.active,&:focus {
                     background-size: 100% 100%;
                     border: none;
@@ -62,6 +62,7 @@ header {
         }
     }
 }
+/*
 @media screen and (max-width: 750px) {
     header .site-logo img {
         margin-top: 20px !important;
@@ -112,3 +113,4 @@ header {
     margin-right: 25px;
     cursor: pointer;
 }
+*/

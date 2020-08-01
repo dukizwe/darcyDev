@@ -35,14 +35,8 @@ html, body {
 }
 .home-content .section-content .presentation {
   width: 60%;
-  /*border-left: 5px solid #cdf2f8;*/
   padding-left: 30px;
   margin-right: 40px;
-}
-.home-content .section-content .presentation .presentation-name {
-  /*font-family: 'Rock Salt', cursive;
-  color: #000;
-  font-size: 30px;*/
 }
 .home-content .section-content .presentation .presentation-name > div {
   margin-bottom: 20px;
@@ -83,7 +77,7 @@ html, body {
   font-size: 17px;
 }
 .home-content .section-content .presentation .description button {
-  transition: all 0.2s ease-out 0s;
+  transition: transform 0.2s ease-out 0s;
   color: #000;
   letter-spacing: 1.5px;
   font-family: "Roboto", sans-serif;
@@ -116,7 +110,8 @@ html, body {
   border-radius: 2px;
   font-size: 20px;
   text-align: left;
-  margin-top: 70px;
+  position: relative;
+  top: 10%;
 }
 .home-content .section-content .presentation .editor-line .line {
   color: #aca6a6;
@@ -374,7 +369,7 @@ html, body {
 }
 header {
   width: 100%;
-  transition-duration: 0.5s;
+  transition: transform 0.5s;
 }
 header.hidden {
   position: fixed;
@@ -415,7 +410,6 @@ header .content .site-logo img {
 header .content nav {
   padding: 20px 0;
   font-family: sans-serif;
-  transition: none;
 }
 header .content nav a {
   text-decoration: none;
@@ -423,7 +417,8 @@ header .content nav a {
   padding: 10px 5px;
   background: linear-gradient(to top, #34b396 0%, #34b396 2px, transparent 2px) no-repeat;
   background-size: 0 100%;
-  transition: all 0.3s;
+  transition-property: background-size, border, border-radius, background, color;
+  transition-duration: 0.3s;
 }
 header .content nav a.active, header .content nav a:focus {
   background-size: 100% 100%;
@@ -436,62 +431,58 @@ header .content nav a:hover {
   color: #fff;
 }
 
+/*
 @media screen and (max-width: 750px) {
-  header .site-logo img {
-    margin-top: 20px !important;
-  }
+    header .site-logo img {
+        margin-top: 20px !important;
+    }
 }
 @media screen and (max-width: 630px) {
-  header .site-logo img {
-    margin-top: 25px !important;
-  }
+    header .site-logo img {
+        margin-top: 25px !important;
+    }
 }
+
 @media screen and (max-width: 530px) {
-  header .site-logo {
-    width: 30% !important;
-  }
-
-  header .site-logo img {
-    margin-top: 15px !important;
-  }
-
-  header nav {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background: #b8c1f5;
-    display: none;
-  }
-
-  header nav.visible {
-    display: block;
-  }
-
-  header nav a {
-    display: block;
-    text-align: center;
-  }
-
-  header nav a:hover {
-    border-radius: 0px !important;
-  }
-
-  .show-nav-btn {
-    display: block !important;
-  }
-
-  .show-nav-btn i {
-    margin-top: 8px;
-    font-size: 20px;
-  }
+    header .site-logo {
+        width: 30% !important;
+    }
+    header .site-logo img{
+        margin-top: 15px !important;
+    }
+    header nav {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background: #b8c1f5;
+        display: none;
+    }
+    header nav.visible {
+        display: block;
+    }
+    header nav a {
+        display: block;
+        text-align: center;
+    }
+    header nav a:hover {
+        border-radius: 0px !important;
+    }
+    .show-nav-btn {
+        display: block !important;
+    }
+    .show-nav-btn i {
+        margin-top: 8px;
+        font-size: 20px;
+    }
 }
+
 .show-nav-btn {
-  display: none;
-  padding: 10px 5px;
-  margin-right: 25px;
-  cursor: pointer;
+    display: none;
+    padding: 10px 5px;
+    margin-right: 25px;
+    cursor: pointer;
 }
-
+*/
 /*competences*/
 .competences-container {
   font-family: sans-serif;
@@ -1183,6 +1174,108 @@ header .content nav a:hover {
   margin-bottom: 5px;
   font-family: sans-serif;
 }
+.contact-container .contact-form {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+.contact-container .contact-form span {
+  position: relative;
+  left: 11px;
+  bottom: 32px;
+  color: #949494;
+  font-size: 17px;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.contact-container .contact-form .from-subject {
+  width: 30%;
+}
+.contact-container .contact-form .from-subject .from {
+  width: 100%;
+}
+.contact-container .contact-form .from-subject .subject {
+  width: 100%;
+  margin-top: 10px;
+}
+.contact-container .contact-form .from-subject input {
+  padding: 12px 10px;
+  outline: none;
+  color: #122e26f0;
+  width: 100%;
+  border: 1px solid #14daa15c;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 17px;
+  background: #14daa15c;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.contact-container .contact-form .from-subject input:focus {
+  transition-duration: 0.3s;
+  border: 1px solid #0535275c;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.contact-container .contact-form .from-subject input:focus ~ span, .contact-container .contact-form .from-subject input:valid ~ span {
+  bottom: 67px;
+  color: #1d1313;
+  transform: scale(0.9);
+}
+.contact-container .contact-form .message {
+  margin-left: 50px;
+  width: 40%;
+}
+.contact-container .contact-form .message .text-area {
+  height: 121px;
+}
+.contact-container .contact-form .message .text-area textarea {
+  padding: 12px 10px;
+  outline: none;
+  color: #122e26f0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #14daa15c;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 17px;
+  resize: none;
+  background: #14daa15c;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.4s;
+}
+.contact-container .contact-form .message .text-area textarea:focus {
+  border: 1px solid #0535275c;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.contact-container .contact-form .message .text-area textarea:focus ~ span, .contact-container .contact-form .message .text-area textarea:valid ~ span {
+  bottom: 146px;
+  color: #1d1313;
+  transform: scale(0.9);
+}
+.contact-container .contact-form .message .text-area span {
+  bottom: 112px;
+}
+.contact-container .contact-form .message .btn-send {
+  margin-top: 10px;
+  width: 0;
+  position: relative;
+  left: 81.5%;
+}
+.contact-container .contact-form .message .btn-send button {
+  cursor: pointer;
+  background: #97afad;
+  color: #000000;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 3px;
+  transition-duration: 0.4s;
+}
+.contact-container .contact-form .message .btn-send button:hover, .contact-container .contact-form .message .btn-send button:focus {
+  border: none;
+  background: #5eccc2;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
+}
 .contact-container .contact-content {
   background: #353535;
   padding: 10px 0;
@@ -1276,6 +1369,7 @@ header .content nav a:hover {
   padding: 5px;
 }
 
+/*
 @media screen and (max-width: 700px) {
   .contact-content {
     display: block;
@@ -1301,15 +1395,28 @@ header .content nav a:hover {
   .contact-info {
     width: 90% !important;
   }
-}
+}*/
 @media only screen and (min-width: 1366px) {
   .site-container {
     width: 1330px;
     margin: 0 auto;
   }
 }
+@media only screen and (max-height: 600px) {
+  .home-content {
+    height: auto;
+  }
+  .home-content .section-content {
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+  .home-content .scrollDown {
+    display: none;
+  }
+}
 @media screen and (max-width: 1130px) {
-  header,
+  header .content,
 .home-content,
 .competences-container,
 .activities-container,
@@ -1319,7 +1426,7 @@ header .content nav a:hover {
   }
 }
 @media screen and (max-width: 1020px) {
-  header,
+  header .content,
 .home-content,
 .competences-container,
 .activities-container,
@@ -1327,104 +1434,162 @@ header .content nav a:hover {
 .contact-container {
     width: 95% !important;
   }
-
-  .presentation {
-    border: none;
-  }
-
-  header .site-logo img {
-    margin-top: 15px;
-  }
 }
 @media screen and (max-width: 850px) {
   .home-content {
     width: 100%;
     height: auto;
     position: static;
-    transform: none;
   }
-
-  .section-content {
+  .home-content .section-content {
     display: block;
     text-align: center;
+    top: 0;
+    left: 0;
+    transform: none;
   }
-
-  .presentation .description {
+  .home-content .section-content .presentation {
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
-
-  .my-picture {
+  .home-content .section-content .presentation .description {
+    width: 60%;
+    margin: auto;
+  }
+  .home-content .section-content .presentation .editor-line {
     width: 80%;
-    position: relative;
-    left: 10%;
+    margin: auto;
+  }
+  .home-content .section-content .my-picture {
+    width: 80%;
+    margin: auto;
     margin-top: 10px;
   }
-
-  header,
-.competences-container,
-.activities-container,
-.culture-container,
-.contact-container {
-    width: 100% !important;
-  }
-
-  .culture-content {
-    padding: 10px 5px !important;
+  .home-content .scrollDown {
+    display: none;
   }
 }
+/*
+@media only screen and (min-width: 1366px) {
+    .site-container {
+        width: 1330px;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 1130px) {
+    header,
+    .home-content,
+    .competences-container,
+    .activities-container,
+    .culture-container,
+    .contact-container {
+        width: 90% !important;
+    }
+}
+@media screen and (max-width: 1020px) {
+    header,
+    .home-content,
+    .competences-container,
+    .activities-container,
+    .culture-container,
+    .contact-container {
+        width: 95% !important;
+    }
+    .presentation {
+        border: none;
+    }
+    header .site-logo img{
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .home-content {
+        width: 100%;
+        height: auto;
+        position: static;
+        transform: none;
+    }
+    .section-content {
+        display: block;
+        text-align: center;
+    }
+    .presentation .description {
+        width: 100%;
+    }
+    .my-picture {
+        width: 80%;
+        position: relative;
+        left: 10%;
+        margin-top: 10px;
+    }
+    header,
+    .competences-container,
+    .activities-container,
+    .culture-container,
+    .contact-container {
+        width: 100% !important;
+    }
+    .culture-content {
+        padding: 10px 5px !important;
+    }
+}
+@media screen and (max-width: 500px) {
+
+}
+
 @media screen and (max-width: 770px) {
-  .javascript-languages > div {
-    margin-left: 30px;
-  }
+    .javascript-languages > div {
+        margin-left: 30px;
+    }
 }
 @media screen and (max-width: 715px) {
-  .structure-langs {
-    margin-left: 0 !important;
-  }
+    .structure-langs {
+        margin-left: 0 !important;
+    }
 }
 @media screen and (max-width: 685px) {
-  .javascript-languages > div {
-    margin-left: 20px;
-  }
+    .javascript-languages > div {
+        margin-left: 20px;
+    }
 }
 @media screen and (max-width: 620px) {
-  .javascript-languages > div {
-    margin-left: 10px;
-  }
-
-  .structure-langs {
-    text-align: center;
-  }
-
-  .structure-langs .html-img {
-    margin: auto;
-  }
+    .javascript-languages > div {
+        margin-left: 10px;
+    }
+    .structure-langs {
+        text-align: center;
+    }
+    .structure-langs .html-img {
+        margin: auto;
+    }
 }
 @media screen and (max-width: 570px) {
-  .structure-langs .html-img {
-    margin: auto;
-  }
 
-  .javascript-languages > div {
-    margin-left: 0;
-  }
+    .structure-langs .html-img {
+        margin: auto;
+    }
+    .javascript-languages > div {
+        margin-left: 0;
+    }
 }
 @media screen and (max-width: 510px) {
-  .javascript-languages {
-    flex-wrap: wrap;
-    flex-direction: column;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-
-  .javascript-languages > div {
-    margin-left: 10px;
-    margin-top: 20px;
-  }
-
-  .back-end-langs .php-languages > div {
-    margin-left: 20px;
-  }
+    .javascript-languages {
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .javascript-languages > div {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .back-end-langs .php-languages > div {
+        margin-left: 20px;
+    }
 }
+*/
 
 /*# sourceMappingURL=style.css.map */
