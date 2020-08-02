@@ -36,6 +36,13 @@
     .contact-container {
         width: 95% !important;
     }
+    .frequency-questions {
+      .editor div {
+        .editor-description {
+            width: 55%;
+        }
+    }
+    }
 }
 @media screen and (max-width: 850px) {
     .home-content {
@@ -43,24 +50,35 @@
         height: auto;
         position: static;
         .section-content {
-            display: block;
             text-align: center;
             top: 0;
             left: 0;
             transform: none;
-            .presentation {
+            display: block;
+            .presentation-section {
                 width: 100%;
-                margin: 0;
-                padding: 0;
-                .description {
-                    width: 60%;
-                    margin: auto;
+                height: 93vh;
+                .presentation {
+                    position: relative;
+                    width: 100%;
+                    height: max-content;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    .description {
+                        width: 60%;
+                        margin: auto;
+                    }
+                    .editor-line {
+                        bottom: -10%;
+                    }
+                    
                 }
-                .editor-line {
-                    width: 80%;
-                    margin: auto;
+            }
+            .scrollDown {
+                &.scroll-1 {
+                    display: block;
                 }
-                
             }
             .my-picture {
                 width: 80%;
@@ -69,7 +87,255 @@
             }
         }
         .scrollDown {
+            &.scroll-2 {
+                display: none;
+            }
+        }
+    }
+    .frequency-questions {
+      .editor div {
+        .editor-description {
+            width: 60%;
+        }
+    }
+    }
+}
+
+@media only screen and (max-height: 710px) {
+    .home-content {
+        .section-content {
+            .presentation-section {
+                .presentation {
+                    top: 45%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-height: 610px) {
+    .home-content {
+        .section-content {
+            .presentation-section {
+                .presentation {
+                    top: 40%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 850px) {
+}
+@media screen and (max-width: 750px) {
+    .home-content {
+        .section-content {
+            .presentation-section {
+                .presentation {
+                    .description {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+    
+    .contact-container {
+        .contact-form {
+            display: block;
+            .from-subject {
+                width: 80%;
+                margin: 0 auto;
+            }
+            .message {
+                width: 80%;
+                margin-left: 0;
+                margin-top: 10px !important;
+                margin: 0 auto;
+            }
+        }
+        .contact-content {
+          display: block;
+          .thanking {
+            width: 100% !important;
+            margin: auto;
+          }
+          .contact-info {
+            margin-top: 10px !important;
+            border-top: 1px solid #000;
+            padding: 10px 0;
+          }
+        }
+    }
+}
+@media screen and (max-width: 610px) {
+    .competences-container {
+        .languages-container {
+            display: block;
+            .structure-langs {
+                width: 100%;
+            }
+            .style-langs {
+                width: 100%;
+            }
+            .javascript-langs {
+                width: 100%;
+            }
+            .back-end-langs {
+                width: 100%;
+            }
+        }
+    }
+    .frequency-questions {
+        margin: 0 auto;
+        .editor div {
+            a {
+                display: block;
+                width: max-content;
+            }
+            display: block;
+            .editor-description {
+                position: static;
+                width: 100%;
+                margin-top: 15px;
+                margin-left: 10%;
+                padding: 1em;
+                transform: none;
+                animation: leeSecond 0.2 linear;
+                &::before {
+                    left: 25%;
+                    margin-top: -6%;
+                    top: auto;
+                }
+            }
+            &:hover {
+                .editor-description {
+                    animation: leeSecond 0.2s linear;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    .home-content {
+        .section-content {
+            .scrollDown {
+                &.scroll-1 {
+                    top: 95%;
+                }
+            }
+        }
+    }
+    
+    .competences-container {
+        .languages-container {
+            display: block;
+            .structure-langs {
+                width: 100%;
+            }
+            .style-langs {
+                width: 100%;
+            }
+            .javascript-langs {
+                width: 100%;
+            }
+            .back-end-langs {
+                width: 100%;
+            }
+        }
+    }
+    .frequency-questions {
+        width: 100%;
+        padding: 0.1em;
+    }
+    .grid-item-17 {
+        span {
             display: none;
         }
+    }
+    .grid-item-25 {
+        span {
+            display: none;
+        }
+    }
+
+    
+    .contact-container {
+        .contact-form {
+            .from-subject {
+                width: 100%;
+            }
+            .message {
+                width: 100%;
+            }
+        }
+    }
+    .contact-container {
+        .contact-content {
+          .contact-info {
+              width: 70%;
+          }
+        }
+    }
+}
+@media screen and (max-width: 415px) {
+    .home-content {
+        .section-content {
+            .presentation-section {
+                .presentation {
+                    .description {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .frequency-questions {
+        .editor div {
+            .editor-description {
+                margin-left: 0;
+            }
+        }
+    }
+    .competences-container {
+        .languages-container {
+            .lang-description {
+                padding: 0 10px 0 10px;
+            }
+        }
+    }
+    
+    .contact-container {
+        .contact-content {
+          .contact-info {
+              width: 90%;
+          }
+        }
+    }
+}
+@media screen and (max-width: 380px) {
+    .home-content {
+        .section-content {
+            .presentation-section {
+                .presentation {
+                    top: 40%;
+                }
+                .scrollDown {
+                    &.scroll-1 {
+                        top: 88%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 350px) {
+}
+
+@keyframes leeSecond {
+    from {
+      opacity: 0.5;
+      transform: translateY(10px);
+    } to {
+      opacity: 1;
+      transform: none;
     }
 }

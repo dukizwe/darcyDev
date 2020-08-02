@@ -16,127 +16,141 @@ html, body {
 }
 .home-content {
     width: 80%;
-    height: 92vh;
+    height: 93vh;
     background: $initial_color;
     border-radius: 10px;
     margin: auto;
     .section-content {
-        display: flex;
         position: relative;
+        display: flex;
         justify-content: space-between;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        .presentation {
-            width: 60%;
-            padding-left: 30px;
-            margin-right: 40px;
-            .presentation-name {
-                > div {
-                    margin-bottom: 20px;
+        .presentation-section {
+            display: flex;
+            width: 70%;
+            text-align: center;
+            padding: 0 10px;
+            .presentation {
+                width: 100%;
+                .presentation-name {
+                    > div {
+                        margin-bottom: 20px;
+                    }
+                    .hello {
+                        color: #333;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 50px;
+                        font-weight: 200;
+                        margin-bottom: 10px;
+                        letter-spacing: 3px;
+                    }
+                    .name {
+                        font-family: 'Montserrat', sans-serif;
+                        color: #000;
+                        font-size: 30px;
+                        font-weight: 200;
+                        margin-bottom: 0;
+                        span {
+                            color: #089ECA;
+                            font-family: 'Roboto', sans-serif;
+                            font-weight: 700;
+                        }
+                    }
+                    .hero_name {
+                        font-size: 18px;
+                        margin-bottom: 40px;
+                    }
+                    .dev_type {
+                        display: inline-block;
+                    }
                 }
-                .hello {
-                    color: #333;
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 50px;
-                    font-weight: 200;
-                    margin-bottom: 10px;
-                    letter-spacing: 3px;
+                .description > div {
+                    text-align: center;
+                    margin: 20px 0;
                 }
-                .name {
-                    font-family: 'Montserrat', sans-serif;
-                    color: #000;
-                    font-size: 30px;
-                    font-weight: 200;
-                    margin-bottom: 0;
-                    span {
-                        color: #089ECA;
+                .description {
+                    width: 65%;
+                    margin:  0 auto;
+                    font-size: 17px;
+                    button {
+                        transition: transform 0.2s ease-out 0s;
+                        color: #000;
+                        letter-spacing: 1.5px;
                         font-family: 'Roboto', sans-serif;
-                        font-weight: 700;
-                    }
-                }
-                .hero_name {
-                    font-size: 18px;
-                    margin-bottom: 40px;
-                }
-                .dev_type {
-                    display: inline-block;
-                }
-            }
-            .description > div {
-                text-align: center;
-                margin: 20px 0;
-            }
-            .description {
-                width: 418px;
-                font-size: 17px;
-                a {
-                }
-                button {
-                    transition: transform 0.2s ease-out 0s;
-                    color: #000;
-                    letter-spacing: 1.5px;
-                    font-family: 'Roboto', sans-serif;
-                    cursor: pointer;
-                    box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
-                    outline: none;
-                    border-width: 1px;
-                    font-size: 16px;
-                    border-style: initial;
-                    border-color: transparent;
-                    border-image: initial;
-                    border-radius: 10rem;
-                    padding: 1rem 2rem;
-                    margin: 0rem;
-                    &:hover {
-                        transform: translateY(-3px);
                         cursor: pointer;
+                        box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
+                        outline: none;
+                        border-width: 1px;
+                        font-size: 16px;
+                        border-style: initial;
+                        border-color: transparent;
+                        border-image: initial;
+                        border-radius: 10rem;
+                        padding: 1rem 2rem;
+                        margin: 0rem;
+                        &:hover {
+                            transform: translateY(-3px);
+                            cursor: pointer;
+                        }
+                    }
+                    .competences-direction {
+                        button {
+                            background: #70c5d4;
+                        }
+                    }
+                    .contact-direction {
+                        button {
+                            background: #faed;
+                        }
                     }
                 }
-                .competences-direction {
-                    button {
-                        background: #70c5d4;
+                .editor-line {
+                    display: flex;
+                    background: #122e26;
+                    padding: 10px;
+                    border-radius: 2px;
+                    font-size: 20px;
+                    text-align: left;
+                    position: relative;
+                    width: 80%;
+                    margin: 0 auto;
+                    bottom: -10%;
+                    .line {
+                        color: #aca6a6;
                     }
-                }
-                .contact-direction {
-                    button {
-                        background: #faed;
+                    .typed-text {
+                        color: #fff;
+                        margin-left: 20px;
                     }
-                }
-            }
-            .editor-line {
-                display: flex;
-                background: #122e26;
-                padding: 10px;
-                border-radius: 2px;
-                font-size: 20px;
-                text-align: left;
-                position: relative;
-                top: 10%;
-                .line {
-                    color: #aca6a6;
-                }
-                .typed-text {
-                    color: #fff;
-                    margin-left: 20px;
-                }
-                .cursor {
-                    display: inline-block;
-                    background: #fff;
-                    height: 5px;
-                    width: 2px;
-                    background: #ccc;
-                    height: 22px;
-                    margin: 0px 0 0 2px;
-                    animation: blink 1s infinite;
-                    &.typing {
-                        animation: none;
+                    .cursor {
+                        display: inline-block;
+                        background: #fff;
+                        height: 5px;
+                        width: 2px;
+                        background: #ccc;
+                        height: 22px;
+                        margin: 0px 0 0 2px;
+                        animation: blink 1s infinite;
+                        &.typing {
+                            animation: none;
+                        }
                     }
                 }
             }
         }
+        .scrollDown {
+            &.scroll-1 {
+                display: none;
+                position: relative;
+                top: 90%;
+                left: auto;
+                right: 50%;
+            }
+        }
         .my-picture {
-            width: 350px;
+            width: 35%;
             padding: 5px 0;
             img {
                 width: 100%;
@@ -147,7 +161,7 @@ html, body {
         position: absolute;
         width: 18px;
         height: 18px;
-        bottom: 20px;
+        bottom: 3%;
         left: 50%;
         animation: goDown 1s linear infinite;
         a {

@@ -100,7 +100,9 @@
           margin-top: 10px;
           width: 0;
           position: relative;
-          left: 81.5%;
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
           button {
             cursor: pointer;
             background: #97afad;
@@ -223,30 +225,3 @@
       padding: 5px;
     }
 }
-  /*
-  @media screen and (max-width: 700px) {
-    .contact-content {
-      display: block;
-    }
-  
-    .thanking {
-      width: 100% !important;
-      margin: auto;
-    }
-  
-    .contact-info {
-      margin-top: 10px !important;
-      border-top: 1px solid #000;
-      padding: 10px 0;
-    }
-  }
-  @media screen and (max-width: 550px) {
-    .contact-info {
-      width: 70% !important;
-    }
-  }
-  @media screen and (max-width: 400px) {
-    .contact-info {
-      width: 90% !important;
-    }
-  }*/

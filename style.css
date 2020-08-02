@@ -20,28 +20,32 @@ html, body {
 
 .home-content {
   width: 80%;
-  height: 92vh;
+  height: 93vh;
   background: #f0f0f0;
   border-radius: 10px;
   margin: auto;
 }
 .home-content .section-content {
-  display: flex;
   position: relative;
+  display: flex;
   justify-content: space-between;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.home-content .section-content .presentation {
-  width: 60%;
-  padding-left: 30px;
-  margin-right: 40px;
+.home-content .section-content .presentation-section {
+  display: flex;
+  width: 70%;
+  text-align: center;
+  padding: 0 10px;
 }
-.home-content .section-content .presentation .presentation-name > div {
+.home-content .section-content .presentation-section .presentation {
+  width: 100%;
+}
+.home-content .section-content .presentation-section .presentation .presentation-name > div {
   margin-bottom: 20px;
 }
-.home-content .section-content .presentation .presentation-name .hello {
+.home-content .section-content .presentation-section .presentation .presentation-name .hello {
   color: #333;
   font-family: "Montserrat", sans-serif;
   font-size: 50px;
@@ -49,34 +53,35 @@ html, body {
   margin-bottom: 10px;
   letter-spacing: 3px;
 }
-.home-content .section-content .presentation .presentation-name .name {
+.home-content .section-content .presentation-section .presentation .presentation-name .name {
   font-family: "Montserrat", sans-serif;
   color: #000;
   font-size: 30px;
   font-weight: 200;
   margin-bottom: 0;
 }
-.home-content .section-content .presentation .presentation-name .name span {
+.home-content .section-content .presentation-section .presentation .presentation-name .name span {
   color: #089ECA;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
-.home-content .section-content .presentation .presentation-name .hero_name {
+.home-content .section-content .presentation-section .presentation .presentation-name .hero_name {
   font-size: 18px;
   margin-bottom: 40px;
 }
-.home-content .section-content .presentation .presentation-name .dev_type {
+.home-content .section-content .presentation-section .presentation .presentation-name .dev_type {
   display: inline-block;
 }
-.home-content .section-content .presentation .description > div {
+.home-content .section-content .presentation-section .presentation .description > div {
   text-align: center;
   margin: 20px 0;
 }
-.home-content .section-content .presentation .description {
-  width: 418px;
+.home-content .section-content .presentation-section .presentation .description {
+  width: 65%;
+  margin: 0 auto;
   font-size: 17px;
 }
-.home-content .section-content .presentation .description button {
+.home-content .section-content .presentation-section .presentation .description button {
   transition: transform 0.2s ease-out 0s;
   color: #000;
   letter-spacing: 1.5px;
@@ -93,17 +98,17 @@ html, body {
   padding: 1rem 2rem;
   margin: 0rem;
 }
-.home-content .section-content .presentation .description button:hover {
+.home-content .section-content .presentation-section .presentation .description button:hover {
   transform: translateY(-3px);
   cursor: pointer;
 }
-.home-content .section-content .presentation .description .competences-direction button {
+.home-content .section-content .presentation-section .presentation .description .competences-direction button {
   background: #70c5d4;
 }
-.home-content .section-content .presentation .description .contact-direction button {
+.home-content .section-content .presentation-section .presentation .description .contact-direction button {
   background: #faed;
 }
-.home-content .section-content .presentation .editor-line {
+.home-content .section-content .presentation-section .presentation .editor-line {
   display: flex;
   background: #122e26;
   padding: 10px;
@@ -111,16 +116,18 @@ html, body {
   font-size: 20px;
   text-align: left;
   position: relative;
-  top: 10%;
+  width: 80%;
+  margin: 0 auto;
+  bottom: -10%;
 }
-.home-content .section-content .presentation .editor-line .line {
+.home-content .section-content .presentation-section .presentation .editor-line .line {
   color: #aca6a6;
 }
-.home-content .section-content .presentation .editor-line .typed-text {
+.home-content .section-content .presentation-section .presentation .editor-line .typed-text {
   color: #fff;
   margin-left: 20px;
 }
-.home-content .section-content .presentation .editor-line .cursor {
+.home-content .section-content .presentation-section .presentation .editor-line .cursor {
   display: inline-block;
   background: #fff;
   height: 5px;
@@ -130,11 +137,18 @@ html, body {
   margin: 0px 0 0 2px;
   animation: blink 1s infinite;
 }
-.home-content .section-content .presentation .editor-line .cursor.typing {
+.home-content .section-content .presentation-section .presentation .editor-line .cursor.typing {
   animation: none;
 }
+.home-content .section-content .scrollDown.scroll-1 {
+  display: none;
+  position: relative;
+  top: 90%;
+  left: auto;
+  right: 50%;
+}
 .home-content .section-content .my-picture {
-  width: 350px;
+  width: 35%;
   padding: 5px 0;
 }
 .home-content .section-content .my-picture img {
@@ -144,7 +158,7 @@ html, body {
   position: absolute;
   width: 18px;
   height: 18px;
-  bottom: 20px;
+  bottom: 3%;
   left: 50%;
   animation: goDown 1s linear infinite;
 }
@@ -431,58 +445,6 @@ header .content nav a:hover {
   color: #fff;
 }
 
-/*
-@media screen and (max-width: 750px) {
-    header .site-logo img {
-        margin-top: 20px !important;
-    }
-}
-@media screen and (max-width: 630px) {
-    header .site-logo img {
-        margin-top: 25px !important;
-    }
-}
-
-@media screen and (max-width: 530px) {
-    header .site-logo {
-        width: 30% !important;
-    }
-    header .site-logo img{
-        margin-top: 15px !important;
-    }
-    header nav {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        background: #b8c1f5;
-        display: none;
-    }
-    header nav.visible {
-        display: block;
-    }
-    header nav a {
-        display: block;
-        text-align: center;
-    }
-    header nav a:hover {
-        border-radius: 0px !important;
-    }
-    .show-nav-btn {
-        display: block !important;
-    }
-    .show-nav-btn i {
-        margin-top: 8px;
-        font-size: 20px;
-    }
-}
-
-.show-nav-btn {
-    display: none;
-    padding: 10px 5px;
-    margin-right: 25px;
-    cursor: pointer;
-}
-*/
 /*competences*/
 .competences-container {
   font-family: sans-serif;
@@ -1075,6 +1037,7 @@ header .content nav a:hover {
 .frequency-questions {
   padding: 1em;
   margin-top: 30px;
+  width: 90%;
 }
 .frequency-questions > div {
   color: #000;
@@ -1094,6 +1057,7 @@ header .content nav a:hover {
   border-radius: 5px;
   z-index: 10;
   transition: opacity 1s;
+  animation: lee 0.2s linear;
 }
 .frequency-questions .editor div .editor-description .desc-img img {
   width: 50px;
@@ -1151,6 +1115,7 @@ header .content nav a:hover {
 .frequency-questions a .span2 {
   margin-left: 5px;
 }
+
 @keyframes lee {
   from {
     opacity: 0.5;
@@ -1259,7 +1224,9 @@ header .content nav a:hover {
   margin-top: 10px;
   width: 0;
   position: relative;
-  left: 81.5%;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 .contact-container .contact-form .message .btn-send button {
   cursor: pointer;
@@ -1369,33 +1336,6 @@ header .content nav a:hover {
   padding: 5px;
 }
 
-/*
-@media screen and (max-width: 700px) {
-  .contact-content {
-    display: block;
-  }
-
-  .thanking {
-    width: 100% !important;
-    margin: auto;
-  }
-
-  .contact-info {
-    margin-top: 10px !important;
-    border-top: 1px solid #000;
-    padding: 10px 0;
-  }
-}
-@media screen and (max-width: 550px) {
-  .contact-info {
-    width: 70% !important;
-  }
-}
-@media screen and (max-width: 400px) {
-  .contact-info {
-    width: 90% !important;
-  }
-}*/
 @media only screen and (min-width: 1366px) {
   .site-container {
     width: 1330px;
@@ -1434,6 +1374,10 @@ header .content nav a:hover {
 .contact-container {
     width: 95% !important;
   }
+
+  .frequency-questions .editor div .editor-description {
+    width: 55%;
+  }
 }
 @media screen and (max-width: 850px) {
   .home-content {
@@ -1442,154 +1386,212 @@ header .content nav a:hover {
     position: static;
   }
   .home-content .section-content {
-    display: block;
     text-align: center;
     top: 0;
     left: 0;
     transform: none;
+    display: block;
   }
-  .home-content .section-content .presentation {
+  .home-content .section-content .presentation-section {
     width: 100%;
-    margin: 0;
-    padding: 0;
+    height: 93vh;
   }
-  .home-content .section-content .presentation .description {
+  .home-content .section-content .presentation-section .presentation {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .home-content .section-content .presentation-section .presentation .description {
     width: 60%;
     margin: auto;
   }
-  .home-content .section-content .presentation .editor-line {
-    width: 80%;
-    margin: auto;
+  .home-content .section-content .presentation-section .presentation .editor-line {
+    bottom: -10%;
+  }
+  .home-content .section-content .scrollDown.scroll-1 {
+    display: block;
   }
   .home-content .section-content .my-picture {
     width: 80%;
     margin: auto;
     margin-top: 10px;
   }
-  .home-content .scrollDown {
+  .home-content .scrollDown.scroll-2 {
     display: none;
   }
-}
-/*
-@media only screen and (min-width: 1366px) {
-    .site-container {
-        width: 1330px;
-        margin: 0 auto;
-    }
-}
 
+  .frequency-questions .editor div .editor-description {
+    width: 60%;
+  }
+}
+@media only screen and (max-height: 710px) {
+  .home-content .section-content .presentation-section .presentation {
+    top: 45%;
+  }
+}
+@media only screen and (max-height: 610px) {
+  .home-content .section-content .presentation-section .presentation {
+    top: 40%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .home-content .section-content .presentation-section .presentation .description {
+    width: 80%;
+  }
 
-@media screen and (max-width: 1130px) {
-    header,
-    .home-content,
-    .competences-container,
-    .activities-container,
-    .culture-container,
-    .contact-container {
-        width: 90% !important;
-    }
+  .contact-container .contact-form {
+    display: block;
+  }
+  .contact-container .contact-form .from-subject {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contact-container .contact-form .message {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 10px !important;
+    margin: 0 auto;
+  }
+  .contact-container .contact-content {
+    display: block;
+  }
+  .contact-container .contact-content .thanking {
+    width: 100% !important;
+    margin: auto;
+  }
+  .contact-container .contact-content .contact-info {
+    margin-top: 10px !important;
+    border-top: 1px solid #000;
+    padding: 10px 0;
+  }
 }
-@media screen and (max-width: 1020px) {
-    header,
-    .home-content,
-    .competences-container,
-    .activities-container,
-    .culture-container,
-    .contact-container {
-        width: 95% !important;
-    }
-    .presentation {
-        border: none;
-    }
-    header .site-logo img{
-        margin-top: 15px;
-    }
-}
-@media screen and (max-width: 850px) {
-    .home-content {
-        width: 100%;
-        height: auto;
-        position: static;
-        transform: none;
-    }
-    .section-content {
-        display: block;
-        text-align: center;
-    }
-    .presentation .description {
-        width: 100%;
-    }
-    .my-picture {
-        width: 80%;
-        position: relative;
-        left: 10%;
-        margin-top: 10px;
-    }
-    header,
-    .competences-container,
-    .activities-container,
-    .culture-container,
-    .contact-container {
-        width: 100% !important;
-    }
-    .culture-content {
-        padding: 10px 5px !important;
-    }
-}
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 610px) {
+  .competences-container .languages-container {
+    display: block;
+  }
+  .competences-container .languages-container .structure-langs {
+    width: 100%;
+  }
+  .competences-container .languages-container .style-langs {
+    width: 100%;
+  }
+  .competences-container .languages-container .javascript-langs {
+    width: 100%;
+  }
+  .competences-container .languages-container .back-end-langs {
+    width: 100%;
+  }
 
+  .frequency-questions {
+    margin: 0 auto;
+  }
+  .frequency-questions .editor div {
+    display: block;
+  }
+  .frequency-questions .editor div a {
+    display: block;
+    width: max-content;
+  }
+  .frequency-questions .editor div .editor-description {
+    position: static;
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 10%;
+    padding: 1em;
+    transform: none;
+    animation: leeSecond 0.2 linear;
+  }
+  .frequency-questions .editor div .editor-description::before {
+    left: 25%;
+    margin-top: -6%;
+    top: auto;
+  }
+  .frequency-questions .editor div:hover .editor-description {
+    animation: leeSecond 0.2s linear;
+  }
 }
+@media screen and (max-width: 550px) {
+  .home-content .section-content .scrollDown.scroll-1 {
+    top: 95%;
+  }
 
-@media screen and (max-width: 770px) {
-    .javascript-languages > div {
-        margin-left: 30px;
-    }
-}
-@media screen and (max-width: 715px) {
-    .structure-langs {
-        margin-left: 0 !important;
-    }
-}
-@media screen and (max-width: 685px) {
-    .javascript-languages > div {
-        margin-left: 20px;
-    }
-}
-@media screen and (max-width: 620px) {
-    .javascript-languages > div {
-        margin-left: 10px;
-    }
-    .structure-langs {
-        text-align: center;
-    }
-    .structure-langs .html-img {
-        margin: auto;
-    }
-}
-@media screen and (max-width: 570px) {
+  .competences-container .languages-container {
+    display: block;
+  }
+  .competences-container .languages-container .structure-langs {
+    width: 100%;
+  }
+  .competences-container .languages-container .style-langs {
+    width: 100%;
+  }
+  .competences-container .languages-container .javascript-langs {
+    width: 100%;
+  }
+  .competences-container .languages-container .back-end-langs {
+    width: 100%;
+  }
 
-    .structure-langs .html-img {
-        margin: auto;
-    }
-    .javascript-languages > div {
-        margin-left: 0;
-    }
+  .frequency-questions {
+    width: 100%;
+    padding: 0.1em;
+  }
+
+  .grid-item-17 span {
+    display: none;
+  }
+
+  .grid-item-25 span {
+    display: none;
+  }
+
+  .contact-container .contact-form .from-subject {
+    width: 100%;
+  }
+  .contact-container .contact-form .message {
+    width: 100%;
+  }
+
+  .contact-container .contact-content .contact-info {
+    width: 70%;
+  }
 }
-@media screen and (max-width: 510px) {
-    .javascript-languages {
-        flex-wrap: wrap;
-        flex-direction: column;
-        flex-flow: row wrap;
-        justify-content: center;
-    }
-    .javascript-languages > div {
-        margin-left: 10px;
-        margin-top: 20px;
-    }
-    .back-end-langs .php-languages > div {
-        margin-left: 20px;
-    }
+@media screen and (max-width: 415px) {
+  .home-content .section-content .presentation-section .presentation .description {
+    width: 100%;
+  }
+
+  .frequency-questions .editor div .editor-description {
+    margin-left: 0;
+  }
+
+  .competences-container .languages-container .lang-description {
+    padding: 0 10px 0 10px;
+  }
+
+  .contact-container .contact-content .contact-info {
+    width: 90%;
+  }
 }
-*/
+@media screen and (max-width: 380px) {
+  .home-content .section-content .presentation-section .presentation {
+    top: 40%;
+  }
+  .home-content .section-content .presentation-section .scrollDown.scroll-1 {
+    top: 88%;
+  }
+}
+@keyframes leeSecond {
+  from {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
