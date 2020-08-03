@@ -1,4 +1,5 @@
 import './libs/jquery.js'
+import reveal from './modules/reveal.js'
 import Time from './modules/Time.js'
 import sticky from './modules/Sticky.js'
 import scrollSpy from './modules/ScrollSpy.js'
@@ -15,4 +16,5 @@ $(function() {
     $('.editor a').click(function(e) {
         e.preventDefault()
     })
+    reveal()
 })
