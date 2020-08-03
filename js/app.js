@@ -16,5 +16,15 @@ $(function() {
     $('.editor a').click(function(e) {
         e.preventDefault()
     })
+    $('.my-picture img.image-1').click(function(e) {
+        e.preventDefault()
+        $('.my-picture img.image-1').removeClass('visible')
+        $('.my-picture img.image-1').addClass('hidden')
+    })
+    $('.my-picture img.image-2').click(function(e) {
+        e.preventDefault()
+        $('.my-picture img.image-1').removeClass('hidden')
+        $('.my-picture img.image-1').addClass('visible')
+    })
     reveal()
 })

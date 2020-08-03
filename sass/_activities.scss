@@ -1,6 +1,5 @@
 /*activities*/
 .activities-container {
-  font-family: 'Roboto', sans-serif;
   padding: 0;
   width: 80%;
   margin: auto;
@@ -14,7 +13,6 @@
   text-align: center;
   font-size: 25px;
   margin-bottom: 5px;
-  font-family: sans-serif;
 }
 .activities {
   display: flex;
@@ -62,6 +60,7 @@
 }
 .activities .description p {
   font-size: 18px;
+  font-family: 'Roboto', sans-serif;
 }
 .activities .description a.site-direction {
   color: #ffbc00;

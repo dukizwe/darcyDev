@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans+Condensed:wght@300&family=PT+Sans&display=swap@family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 /*home*/
 * {
   box-sizing: border-box;
@@ -110,7 +111,7 @@ html, body {
 }
 .home-content .section-content .presentation-section .presentation .editor-line {
   display: flex;
-  background: #122e26;
+  background: #1b1435;
   padding: 10px;
   border-radius: 2px;
   font-size: 20px;
@@ -150,9 +151,27 @@ html, body {
 .home-content .section-content .my-picture {
   width: 35%;
   padding: 5px 0;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.home-content .section-content .my-picture:hover .image-1 {
+  margin-left: -100%;
+}
+.home-content .section-content .my-picture .image-1 {
+  transition: margin-left 0.5s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.home-content .section-content .my-picture .image-1.hidden {
+  margin-left: -100%;
+}
+.home-content .section-content .my-picture .image-1.visible {
+  margin-left: 0;
 }
 .home-content .section-content .my-picture img {
   width: 100%;
+  border-radius: 10px;
 }
 .home-content .scrollDown {
   position: absolute;
@@ -448,7 +467,6 @@ header .content .nav-bar a.active, header .content .nav-bar a:focus, header .con
 
 /*competences*/
 .competences-container {
-  font-family: sans-serif;
   padding: 0;
   width: 80%;
   margin: auto;
@@ -467,7 +485,6 @@ header .content .nav-bar a.active, header .content .nav-bar a:focus, header .con
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 .competences-container .languages-container {
-  font-family: "Roboto", sans-serif;
   width: 100%;
   margin: auto;
   padding: 10px 0;
@@ -480,7 +497,7 @@ header .content .nav-bar a.active, header .content .nav-bar a:focus, header .con
 }
 .competences-container .languages-container .lang-description {
   text-align: center;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: 10px;
   font-size: 17px;
   padding: 0 50px 0 50px;
@@ -642,7 +659,6 @@ header .content .nav-bar a.active, header .content .nav-bar a:focus, header .con
 
 /*activities*/
 .activities-container {
-  font-family: "Roboto", sans-serif;
   padding: 0;
   width: 80%;
   margin: auto;
@@ -658,7 +674,6 @@ header .content .nav-bar a.active, header .content .nav-bar a:focus, header .con
   text-align: center;
   font-size: 25px;
   margin-bottom: 5px;
-  font-family: sans-serif;
 }
 
 .activities {
@@ -715,6 +730,7 @@ header .content .nav-bar a.active, header .content .nav-bar a:focus, header .con
 
 .activities .description p {
   font-size: 18px;
+  font-family: "Roboto", sans-serif;
 }
 
 .activities .description a.site-direction {
@@ -736,7 +752,6 @@ header .content .nav-bar a.active, header .content .nav-bar a:focus, header .con
 
 /*culture*/
 .culture-container {
-  font-family: "Roboto", sans-serif;
   padding: 0;
   width: 80%;
   margin: auto;
@@ -745,7 +760,6 @@ header .content .nav-bar a.active, header .content .nav-bar a:focus, header .con
   text-align: center;
   font-size: 25px;
   margin-bottom: 5px;
-  font-family: sans-serif;
 }
 .culture-container .culture-content {
   background: #fff;
@@ -806,6 +820,7 @@ header .content .nav-bar a.active, header .content .nav-bar a:focus, header .con
   padding: 1em;
   margin-top: 30px;
   width: 90%;
+  font-size: 19px;
 }
 .culture-container .frequency-questions > div {
   color: #000;
@@ -826,6 +841,8 @@ header .content .nav-bar a.active, header .content .nav-bar a:focus, header .con
   z-index: 10;
   transition: opacity 1s;
   animation: lee 0.2s linear;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
 }
 .culture-container .frequency-questions .editor div .editor-description .desc-img img {
   width: 50px;
@@ -896,7 +913,6 @@ header .content .nav-bar a.active, header .content .nav-bar a:focus, header .con
 }
 /*contact*/
 .contact-container {
-  font-family: "Roboto", sans-serif;
   padding: 0;
   width: 80%;
   margin: auto;
@@ -905,7 +921,6 @@ header .content .nav-bar a.active, header .content .nav-bar a:focus, header .con
   text-align: center;
   font-size: 25px;
   margin-bottom: 5px;
-  font-family: sans-serif;
 }
 .contact-container .contact-form {
   display: flex;
@@ -998,16 +1013,15 @@ header .content .nav-bar a.active, header .content .nav-bar a:focus, header .con
 }
 .contact-container .contact-form .message .btn-send button {
   cursor: pointer;
-  background: #97afad;
+  border: 1px solid #97afad;
   color: #000000;
-  border: none;
   font-size: 16px;
   padding: 10px;
   border-radius: 3px;
   transition-duration: 0.4s;
+  font-family: "PT Sans", sans-serif;
 }
 .contact-container .contact-form .message .btn-send button:hover, .contact-container .contact-form .message .btn-send button:focus {
-  border: none;
   background: #5eccc2;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
 }
@@ -1016,6 +1030,8 @@ header .content .nav-bar a.active, header .content .nav-bar a:focus, header .con
   padding: 10px 0;
   display: flex;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
 }
 .contact-container .contact-content .thanking {
   width: 50%;

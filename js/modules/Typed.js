@@ -6,7 +6,7 @@ var typedTexts = [
     [
         "stayHome()",
         "washHands()",
-        "dontHug()"
+        "wearMask()"
     ]
 ]
 
@@ -72,7 +72,7 @@ function typeAgain() {
     if(charIndexAgain < toTypeAgain[arrayIndexAgain].length) {
         cursorSpan.classList.add('typing')
         var span = `<span class='added-text'>${toTypeAgain[arrayIndexAgain].charAt(charIndexAgain)}</span>`
-        if(charIndexAgain == 0 || charIndexAgain == 1 || charIndexAgain == 2 || charIndexAgain == 3 || charIndexAgain == 4 || charIndexAgain == 5 || charIndexAgain == 6) {
+        if(charIndexAgain == 0 || charIndexAgain == 1 || charIndexAgain == 2 || charIndexAgain == 3 || charIndexAgain == 4 || charIndexAgain == 5 || charIndexAgain == 6 || charIndexAgain == 7) {
             span = `<span class='added-text' style='color:#56848c'>${toTypeAgain[arrayIndexAgain].charAt(charIndexAgain)}</span>`
         } else if((arrayIndexAgain == 0 &&(charIndexAgain == 7)) || (arrayIndexAgain == 1 &&(charIndexAgain == 7 || charIndexAgain == 8))) {
             span = `<span class='added-text' style='color:#56848c'>${toTypeAgain[arrayIndexAgain].charAt(charIndexAgain)}</span>`
