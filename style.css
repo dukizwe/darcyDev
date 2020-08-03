@@ -404,45 +404,46 @@ header.visible .content {
 }
 header .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 80%;
   margin: auto;
   margin-top: 0.1px;
   transition-property: transform, background;
 }
-header .content .site-logo {
-  font-family: "Indie Flower", cursive;
-  font-size: 30px;
-  margin-left: 25px;
-  width: 15%;
+header .content .site-brand {
+  padding: 20px 0;
   transition: none;
 }
-header .content .site-logo img {
-  width: 100%;
-  margin-top: 11px;
+header .content .site-brand a {
+  text-decoration: none;
+  color: #000;
+  padding: 13px 5px;
+  font-size: 20px;
+  background: linear-gradient(to top, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.3s;
 }
-header .content nav {
+header .content .site-brand a.active {
+  background-size: 100% 100%;
+}
+header .content .nav-bar {
   padding: 20px 0;
-  font-family: sans-serif;
 }
-header .content nav a {
+header .content .nav-bar a {
   text-decoration: none;
   color: #000;
   padding: 10px 5px;
-  background: linear-gradient(to top, #34b396 0%, #34b396 2px, transparent 2px) no-repeat;
+  font-size: 17px;
+  background: linear-gradient(to top, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;
   background-size: 0 100%;
   transition-property: background-size, border, border-radius, background, color;
   transition-duration: 0.3s;
 }
-header .content nav a.active, header .content nav a:focus {
+header .content .nav-bar a.active, header .content .nav-bar a:focus, header .content .nav-bar a:hover {
   background-size: 100% 100%;
   border: none;
   outline: none;
-}
-header .content nav a:hover {
-  border-radius: 0 0 50% 50%;
-  background: #34b396;
-  color: #fff;
+  color: #2291b1;
 }
 
 /*competences*/
@@ -1121,6 +1122,16 @@ header .content nav a:hover {
   .home-content .scrollDown {
     display: none;
   }
+
+  .home-content .section-content .presentation-section .presentation {
+    position: static !important;
+    transform: none !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+  .home-content .scrollDown.scroll-1 {
+    display: none !important;
+  }
 }
 @media screen and (max-width: 1130px) {
   header .content,
@@ -1176,6 +1187,7 @@ header .content nav a:hover {
     margin: auto;
   }
   .home-content .section-content .presentation-section .presentation .editor-line {
+    display: none !important;
     bottom: -10%;
   }
   .home-content .section-content .scrollDown.scroll-1 {
@@ -1324,6 +1336,10 @@ header .content nav a:hover {
   .contact-container .contact-content .contact-info {
     width: 70%;
   }
+
+  header .content .nav-bar {
+    display: none;
+  }
 }
 @media screen and (max-width: 415px) {
   .home-content .section-content .presentation-section .presentation .description {
@@ -1344,10 +1360,10 @@ header .content nav a:hover {
 }
 @media screen and (max-width: 380px) {
   .home-content .section-content .presentation-section .presentation {
-    top: 40%;
+    top: 47%;
   }
   .home-content .section-content .presentation-section .scrollDown.scroll-1 {
-    top: 88%;
+    top: 92%;
   }
 }
 @keyframes leeSecond {

@@ -10,7 +10,7 @@ export default function ScrollSpy() {
     })
     if(scrolledActiveSpy !== activeSpy) {
         activeSpy = scrolledActiveSpy
-        $('header nav a').removeClass('active')
-        $(`header nav a[href='#${activeSpy}']`).addClass('active')
+        $('header a').removeClass('active')
+        $(`header a[href='#${activeSpy}']`).addClass('active')
     }
 }
