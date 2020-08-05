@@ -1,3 +1,4 @@
+@import "theme";
 header {
     width: 100%;
     transition: transform 0.5s;
@@ -7,7 +8,6 @@ header {
         transform: translateY(-130%);
         z-index: 20;
         .content {
-            background: #fff;
         }
     }
     &.visible {
@@ -15,7 +15,7 @@ header {
         top: 0;
         z-index: 20;
         .content {
-            background: #fff;
+            background: var(--initial_color);
         }
         //box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
     }
@@ -31,7 +31,7 @@ header {
             transition: none;
             a {
                 text-decoration: none;
-                color: #000;
+                color: var(--text);
                 padding: 13px 5px;
                 font-size: 20px;
                 background: linear-gradient(to top, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;
@@ -46,7 +46,7 @@ header {
             padding: 20px 0;
             a {
                 text-decoration: none;
-                color: #000;
+                color: var(--text);
                 padding: 10px 5px;
                 font-size: 17px;
                 background: linear-gradient(to top, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;

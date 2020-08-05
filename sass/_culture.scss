@@ -8,9 +8,10 @@
     text-align: center;
     font-size: 25px;
     margin-bottom: 5px;
+    color: var(--text);
   }
   .culture-content {
-    background: #fff;
+    background: var(--section-backgground);
     padding: 10px 0;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
   }
@@ -25,7 +26,12 @@
       font-size: 17px;
       
       &.active {
-        color: #000;
+        color: var(--text);
+      }
+      &:focus,
+      &:hover {
+        outline: none;
+        color: #2291b1;
       }
     }
     
@@ -82,7 +88,8 @@
       .editor-description {
         display: none;
         position: absolute;
-        background: #fff;
+        background: var(--section-backgground);
+        color: var(--text);
         width: 45%;
         left: 37%;
         transform: translateY(-45%);
@@ -112,7 +119,7 @@
           position: absolute;
           width: 15px;
           height: 15px;
-          background: #fff;
+          background: var(--section-backgground);
           border-radius: 2px;
           left: -1%;
           top: 50%;
@@ -144,6 +151,11 @@
       text-align: center;
       height: fit-content;
       transition: color 0.1s;
+      &:hover,
+      &:focus {
+        outline: none;
+        color: #2291b1;
+      }
       .span1 {
         display: inline-block;
         width: 5px;

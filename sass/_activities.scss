@@ -1,11 +1,12 @@
 /*activities*/
+@import "theme";
 .activities-container {
   padding: 0;
   width: 80%;
   margin: auto;
 }
 .activities-content {
-  background: #fff;
+  background: var(--section-backgground);
   padding: 10px 0;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
 }
@@ -13,6 +14,7 @@
   text-align: center;
   font-size: 25px;
   margin-bottom: 5px;
+  color: var(--text);
 }
 .activities {
   display: flex;
@@ -27,17 +29,32 @@
   overflow: hidden;
   margin: 5px 3px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
+  &.visible {
+    .description {
+      transform: translate(0, -100%);
+    }
+    img {
+      filter: brightness(0.5) blur(1px) brightness(0.5);
+      transform: scale(1.1);
+    }
+    a.site-direction {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 }
-.activities > div:hover img {
-  filter: brightness(0.5) blur(1px) brightness(0.5);
-  transform: scale(1.1);
-}
-.activities > div:hover .description {
-  transform: translate(0, -100%);
-}
-.activities > div:hover a.site-direction {
-  transform: translateX(0);
-  opacity: 1;
+.activities > div:hover {
+  img {
+    filter: brightness(0.5) blur(1px) brightness(0.5);
+    transform: scale(1.1);
+  }
+  .description {
+    transform: translate(0, -100%);
+  }
+  a.site-direction {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .activities-container img {
   width: 100%;

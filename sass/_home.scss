@@ -2,23 +2,27 @@
 * {
     box-sizing: border-box;
 }
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+    outline: none;
+}
+@import "theme";
 html, body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    background: $initial_color;
+    background: var(--initial_color);
     font-family: 'PT Sans', sans-serif;
 }
 .site-container  {
-    background: rgb(205, 242, 248);
-    background: linear-gradient(49.2deg,#f9ed32 10%,#ee2acd91 55%,#b8c1f5);
-    background: $initial_color;
+    background: var(--initial_color);
 }
 .home-content {
     width: 80%;
     height: 93vh;
-    background: $initial_color;
-    border-radius: 10px;
+    background: var(--initial_color);
     margin: auto;
     .section-content {
         position: relative;
@@ -39,7 +43,7 @@ html, body {
                         margin-bottom: 20px;
                     }
                     .hello {
-                        color: #333;
+                        color: var(--text-highlight);
                         font-family: 'Montserrat', sans-serif;
                         font-size: 50px;
                         font-weight: 200;
@@ -48,7 +52,7 @@ html, body {
                     }
                     .name {
                         font-family: 'Montserrat', sans-serif;
-                        color: #000;
+                        color: var(--text);
                         font-size: 30px;
                         font-weight: 200;
                         margin-bottom: 0;
@@ -61,6 +65,7 @@ html, body {
                     .hero_name {
                         font-size: 19px;
                         margin-bottom: 40px;
+                        color: var(--text);
                     }
                     .dev_type {
                         display: inline-block;
@@ -74,6 +79,7 @@ html, body {
                     width: 65%;
                     margin:  0 auto;
                     font-size: 19px;
+                    color: var(--text);
                     button {
                         transition: transform 0.2s ease-out 0s;
                         color: #000;
@@ -90,7 +96,8 @@ html, body {
                         border-radius: 10rem;
                         padding: 1rem 2rem;
                         margin: 0rem;
-                        &:hover {
+                        &:hover,
+                        &:focus {
                             transform: translateY(-3px);
                             cursor: pointer;
                         }

@@ -7,6 +7,7 @@
       text-align: center;
       font-size: 25px;
       margin-bottom: 5px;
+      color: var(--text);
     }
     .contact-form {
       display: flex;
@@ -16,7 +17,7 @@
       span {
         position: relative;
         left: 11px;
-        bottom: 32px;
+        bottom: 35px;
         color: #949494;
         font-size: 17px;
         cursor: pointer;
@@ -36,7 +37,7 @@
         input {
           padding: 12px 10px;
           outline: none;
-          color: #122e26f0;
+          color: var(--input-color);
           width: 100%;
           border: 1px solid #14daa15c;
           border-radius: 5px;
@@ -51,8 +52,8 @@
           }
           &:focus,&:valid {
             ~ span {
-              bottom: 67px;
-              color: #1d1313;
+              bottom: 69px;
+              color: var(--text);
               transform: scale(0.9);
             }
           }
@@ -67,7 +68,7 @@
         textarea {
           padding: 12px 10px;
           outline: none;
-          color: #122e26f0;
+          color: var(--input-color);
           width: 100%;
           height: 100%;
           border: 1px solid #14daa15c;
@@ -84,8 +85,8 @@
           }
           &:focus,&:valid {
             ~ span {
-              bottom: 146px;
-              color: #1d1313;
+              bottom: 148px;
+              color: var(--text);
               transform: scale(0.9);
             }
           }
@@ -104,14 +105,17 @@
           button {
             cursor: pointer;
             border: 1px solid #97afad;
-            color: #000000;
+            background: var(--initial_color);
+            color: var(--text);
             font-size: 16px;
             padding: 10px;
             border-radius: 3px;
             transition-duration: 0.4s;
             font-family: "PT Sans", sans-serif;
             &:hover,&:focus {
+              outline: none;
               background: #5eccc2;
+              color: var(--section-backgground);
               box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
             }
           }
@@ -146,8 +150,13 @@
           a {
             text-decoration: none;
             &:hover i,
-            &:hover span {
+            &:hover span,
+            &:focus i,
+            &:focus span {
               color: #8b8b8b;
+            }
+            &:focus {
+              outline: none;
             }
           }
           i {
@@ -180,34 +189,44 @@
             width: 45px;
             height: 45px;
             transition: all 0.5s;
-            &.facebook:hover {
+            &.facebook:hover,
+            &.facebook:focus {
               background: #4267b2;
               color: white;
               box-shadow: 0 0 15px #4267b2;
+              outline: none;
             }
             
-            &.twitter:hover {
+            &.twitter:hover,
+            &.twitter:focus {
               background: #1da1f2;
               color: white;
               box-shadow: 0 0 15px #1da1f2;
+              outline: none;
             }
             
-            &.instagram:hover {
+            &.instagram:hover,
+            &.instagram:focus {
               background: linear-gradient(49.2deg, #f9ed32 10%, #ee2a7b 55%, #002aff);
               color: #fff;
               box-shadow: 0 0 15px #F56040;
+              outline: none;
             }
             
-            &.linkedin:hover {
+            &.linkedin:hover,
+            &.linkedin:focus {
               background: #2867B2;
               color: #fff;
               box-shadow: 0 0 15px #2867B2;
+              outline: none;
             }
             
-            &.github:hover {
+            &.github:hover,
+            &.github:focus {
               background: #000;
               color: #fff;
               box-shadow: 0 0 15px #000;
+              outline: none;
             }
           }
           i {
