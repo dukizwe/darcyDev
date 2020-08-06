@@ -1,13 +1,23 @@
 body.dark-mode {
-    --initial_color: #212121;
+    --initial_color: #092c3e;
     --text: #dadada;
     --text-highlight: #F0F0F0;
-    --section-backgground: #171515;
+    --section-backgground: #a728a711;
     --input-color: #c7c7c7;
+    --input-toggle-background: #fff;
+    --input-toggle-button: #092c3e;
+    --contact-background: #0000004f;
+    --footer-background: #00000054;
+    --fq-background: #1e1e1e;
 }
 html, body {
     --initial_color: #f0f0f0;
     --text: #000;
     --section-backgground: #fff;
     --input-color: #122e26f0;
+    --input-toggle-background: #092c3e;
+    --input-toggle-button: #fff;
+    --contact-background: #353535;
+    --footer-background: #1E1E1E;
+    --fq-background: #fff;
 }

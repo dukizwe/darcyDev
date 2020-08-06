@@ -221,7 +221,7 @@
                 animation: leeSecond 0.2 linear;
                 &::before { 
                     left: 25% !important;
-                    margin-top: -5%;
+                    margin-top: -7%;
                     top: auto !important;
                 }
             }
@@ -262,8 +262,8 @@
         }
     }
     .frequency-questions {
-        width: 100%;
-        padding: 0.1em;
+        width: 100% !important;
+        padding: 0.1em !important;
     }
     .grid-item-17 {
         span {

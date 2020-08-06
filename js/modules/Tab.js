@@ -24,4 +24,7 @@ export default function Tab() {
             $('.playlist-direction').removeClass('active')
         }
     })
+    $("#checkbox").click(function(e){
+        $('body').toggleClass('dark-mode')
+    })
 }

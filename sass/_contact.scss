@@ -115,7 +115,7 @@
             &:hover,&:focus {
               outline: none;
               background: #5eccc2;
-              color: var(--section-backgground);
+              color: var(--fq-background);
               box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
             }
           }
@@ -123,7 +123,7 @@
       }
     }
     .contact-content {
-      background: #353535;
+      background: var(--contact-background);
       padding: 10px 0;
       display: flex;
       box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
@@ -236,7 +236,7 @@
       }
     }
     .footer {
-      background: #1E1E1E;
+      background: var(--footer-background);
       text-align: center;
       color: #777;
       font-size: 16px;

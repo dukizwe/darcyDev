@@ -13,11 +13,16 @@ button:focus {
 }
 
 body.dark-mode {
-  --initial_color: #212121;
+  --initial_color: #092c3e;
   --text: #dadada;
   --text-highlight: #F0F0F0;
-  --section-backgground: #171515;
+  --section-backgground: #a728a711;
   --input-color: #c7c7c7;
+  --input-toggle-background: #fff;
+  --input-toggle-button: #092c3e;
+  --contact-background: #0000004f;
+  --footer-background: #00000054;
+  --fq-background: #1e1e1e;
 }
 
 html, body {
@@ -25,6 +30,11 @@ html, body {
   --text: #000;
   --section-backgground: #fff;
   --input-color: #122e26f0;
+  --input-toggle-background: #092c3e;
+  --input-toggle-button: #fff;
+  --contact-background: #353535;
+  --footer-background: #1E1E1E;
+  --fq-background: #fff;
 }
 
 html, body {
@@ -422,11 +432,16 @@ html, body {
   }
 }
 body.dark-mode {
-  --initial_color: #212121;
+  --initial_color: #092c3e;
   --text: #dadada;
   --text-highlight: #F0F0F0;
-  --section-backgground: #171515;
+  --section-backgground: #a728a711;
   --input-color: #c7c7c7;
+  --input-toggle-background: #fff;
+  --input-toggle-button: #092c3e;
+  --contact-background: #0000004f;
+  --footer-background: #00000054;
+  --fq-background: #1e1e1e;
 }
 
 html, body {
@@ -434,6 +449,11 @@ html, body {
   --text: #000;
   --section-backgground: #fff;
   --input-color: #122e26f0;
+  --input-toggle-background: #092c3e;
+  --input-toggle-button: #fff;
+  --contact-background: #353535;
+  --footer-background: #1E1E1E;
+  --fq-background: #fff;
 }
 
 header {
@@ -456,11 +476,14 @@ header.visible .content {
 }
 header .content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 80%;
   margin: auto;
   margin-top: 0.1px;
   transition-property: transform, background;
+}
+header .content nav {
+  display: flex;
 }
 header .content .site-brand {
   padding: 20px 0;
@@ -469,7 +492,7 @@ header .content .site-brand {
 header .content .site-brand a {
   text-decoration: none;
   color: var(--text);
-  padding: 13px 5px;
+  padding: 13px 10px;
   font-size: 20px;
   background: linear-gradient(to top, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;
   background-size: 0 100%;
@@ -497,14 +520,58 @@ header .content .nav-bar a.active, header .content .nav-bar a:focus, header .con
   outline: none;
   color: #2291b1;
 }
+header .content .theme-toggle {
+  margin: auto 0;
+}
+header .content .theme-toggle .checkbox {
+  position: relative;
+  display: block;
+  height: 20px;
+  width: 40px;
+  background: var(--input-toggle-background);
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: ease-in 0.2s;
+  appearance: none;
+  outline: none;
+}
+header .content .theme-toggle .checkbox:focus, header .content .theme-toggle .checkbox:hover {
+  outline: none;
+}
+header .content .theme-toggle .checkbox:checked {
+  background: var(--input-toggle-background);
+  outline: none;
+}
+header .content .theme-toggle .checkbox:checked::before {
+  left: 70%;
+  background: var(--input-toggle-button);
+}
+header .content .theme-toggle .checkbox::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 35%;
+  background: var(--input-toggle-button);
+  transition: 0.1s;
+}
 
 /*competences*/
 body.dark-mode {
-  --initial_color: #212121;
+  --initial_color: #092c3e;
   --text: #dadada;
   --text-highlight: #F0F0F0;
-  --section-backgground: #171515;
+  --section-backgground: #a728a711;
   --input-color: #c7c7c7;
+  --input-toggle-background: #fff;
+  --input-toggle-button: #092c3e;
+  --contact-background: #0000004f;
+  --footer-background: #00000054;
+  --fq-background: #1e1e1e;
 }
 
 html, body {
@@ -512,6 +579,11 @@ html, body {
   --text: #000;
   --section-backgground: #fff;
   --input-color: #122e26f0;
+  --input-toggle-background: #092c3e;
+  --input-toggle-button: #fff;
+  --contact-background: #353535;
+  --footer-background: #1E1E1E;
+  --fq-background: #fff;
 }
 
 .competences-container {
@@ -691,11 +763,16 @@ html, body {
 
 /*activities*/
 body.dark-mode {
-  --initial_color: #212121;
+  --initial_color: #092c3e;
   --text: #dadada;
   --text-highlight: #F0F0F0;
-  --section-backgground: #171515;
+  --section-backgground: #a728a711;
   --input-color: #c7c7c7;
+  --input-toggle-background: #fff;
+  --input-toggle-button: #092c3e;
+  --contact-background: #0000004f;
+  --footer-background: #00000054;
+  --fq-background: #1e1e1e;
 }
 
 html, body {
@@ -703,6 +780,11 @@ html, body {
   --text: #000;
   --section-backgground: #fff;
   --input-color: #122e26f0;
+  --input-toggle-background: #092c3e;
+  --input-toggle-button: #fff;
+  --contact-background: #353535;
+  --footer-background: #1E1E1E;
+  --fq-background: #fff;
 }
 
 .activities-container {
@@ -827,7 +909,6 @@ html, body {
 .culture-container nav {
   width: max-content;
   margin: auto;
-  margin-bottom: 10px;
 }
 .culture-container nav a {
   text-decoration: none;
@@ -895,7 +976,7 @@ html, body {
 .culture-container .frequency-questions .editor > div .editor-description {
   display: none;
   position: absolute;
-  background: var(--section-backgground);
+  background: var(--fq-background);
   color: var(--text);
   width: 45%;
   left: 37%;
@@ -924,7 +1005,7 @@ html, body {
   position: absolute;
   width: 15px;
   height: 15px;
-  background: var(--section-backgground);
+  background: var(--fq-background);
   border-radius: 2px;
   left: -1%;
   top: 50%;
@@ -1094,11 +1175,11 @@ html, body {
 .contact-container .contact-form .message .btn-send button:hover, .contact-container .contact-form .message .btn-send button:focus {
   outline: none;
   background: #5eccc2;
-  color: var(--section-backgground);
+  color: var(--fq-background);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 .contact-container .contact-content {
-  background: #353535;
+  background: var(--contact-background);
   padding: 10px 0;
   display: flex;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
@@ -1193,7 +1274,7 @@ html, body {
   transform: translateY(10px);
 }
 .contact-container .footer {
-  background: #1E1E1E;
+  background: var(--footer-background);
   text-align: center;
   color: #777;
   font-size: 16px;
@@ -1382,7 +1463,7 @@ html, body {
   }
   .frequency-questions .editor > div .editor-description::before {
     left: 25% !important;
-    margin-top: -5%;
+    margin-top: -7%;
     top: auto !important;
   }
   .frequency-questions .editor > div:hover .editor-description {
@@ -1411,8 +1492,8 @@ html, body {
   }
 
   .frequency-questions {
-    width: 100%;
-    padding: 0.1em;
+    width: 100% !important;
+    padding: 0.1em !important;
   }
 
   .grid-item-17 span {

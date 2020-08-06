@@ -17,22 +17,24 @@ header {
         .content {
             background: var(--initial_color);
         }
-        //box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
     }
     .content {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         width: 80%;
         margin: auto;
         margin-top: 0.1px;
         transition-property: transform,background;
+        nav {
+            display: flex;
+        }
         .site-brand {
             padding: 20px 0;
             transition: none;
             a {
                 text-decoration: none;
                 color: var(--text);
-                padding: 13px 5px;
+                padding: 13px 10px;
                 font-size: 20px;
                 background: linear-gradient(to top, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;
                 background-size: 0 100%;
@@ -58,6 +60,46 @@ header {
                     border: none;
                     outline: none;
                     color: #2291b1;
+                }
+            }
+        }
+        .theme-toggle {
+            margin: auto 0;
+            .checkbox {
+                position: relative;
+                display: block;
+                height: 20px;
+                width: 40px;
+                background: var(--input-toggle-background);
+                cursor: pointer;
+                border-radius: 20px;
+                overflow: hidden; 
+                transition: ease-in 0.2s;
+                appearance: none;
+                outline: none;
+                &:focus,
+                &:hover {
+                    outline: none;
+                }
+                &:checked {
+                    background: var(--input-toggle-background);
+                    outline: none;
+                    &::before {
+                        left: 70%;
+                        background: var(--input-toggle-button);
+                    }
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 10px;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    left: 35%;
+                    background: var(--input-toggle-button);
+                    transition: 0.1s;
                 }
             }
         }
