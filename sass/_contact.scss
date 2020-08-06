@@ -28,6 +28,12 @@
         width: 30%;
         .from {
           width: 100%;
+          input {
+            pointer-events: none;
+          }
+          span {
+            text-transform: uppercase;
+          }
         }
         .subject {
           width: 100%;

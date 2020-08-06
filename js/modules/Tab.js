@@ -27,4 +27,10 @@ export default function Tab() {
     $("#checkbox").click(function(e){
         $('body').toggleClass('dark-mode')
     })
+    $('.btn-send button').click(function(e) {
+        e.preventDefault()
+        var subject = $('#subject').val()
+        var message = $('#message').val()
+        window.location.replace(`https://mail.google.com/mail/u/0/?view=cm&fs=1&to=mbagapro@gmail.com&su=${subject}&body=${message}`);
+    })
 }
