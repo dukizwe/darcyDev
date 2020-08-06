@@ -56,7 +56,7 @@
     .frequency-questions {
       .editor div {
         .editor-description {
-            width: 55%;
+            width: 55% !important;
         }
     }
     }
@@ -113,7 +113,7 @@
     .frequency-questions {
       .editor div {
         .editor-description {
-            width: 60%;
+            width: 60% !important;
         }
     }
     }
@@ -204,29 +204,30 @@
     }
     .frequency-questions {
         margin: 0 auto;
-        .editor div {
+        .editor > div {
+            display: block !important;
             a {
                 display: block;
                 width: max-content;
             }
             display: block;
             .editor-description {
-                position: static;
-                width: 100%;
+                position: static !important;
+                width: 100% !important;
                 margin-top: 15px;
                 margin-left: 10%;
-                padding: 1em;
-                transform: none;
+                padding: 1em !important;
+                transform: none !important;
                 animation: leeSecond 0.2 linear;
-                &::before {
-                    left: 25%;
-                    margin-top: -6%;
-                    top: auto;
+                &::before { 
+                    left: 25% !important;
+                    margin-top: -5%;
+                    top: auto !important;
                 }
             }
             &:hover {
                 .editor-description {
-                    animation: leeSecond 0.2s linear;
+                    animation: leeSecond 0.2s linear !important;
                 }
             }
         }

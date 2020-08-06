@@ -4,6 +4,9 @@ export default class Time {
         const today = new Date().getTime()
         return new Number((today - oldDate) / 31536000000).toFixed(0)
     }
+    get currentYear() {
+        return new Date().getFullYear()
+    }
     get carrierYear() {
         return this.diffTime("1 September 2017")
     }
