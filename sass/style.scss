@@ -12,31 +12,49 @@
 
 .reveal-top {
     opacity: 0;
-    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+            transform: translateY(-30px);
 }
 .reveal-right {
     opacity: 0;
-    transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+            transform: translateX(30px);
 }
 .reveal-bottom {
     opacity: 0;
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+            transform: translateY(30px);
 }
 .reveal-left {
     opacity: 0;
-    transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+        -ms-transform: translateX(-30px);
+            transform: translateX(-30px);
 }
 .reveal-visible {
     opacity: 1;
-    transform: none;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 .reveal-1 {
-    transition-delay: .1s;
+    -webkit-transition-delay: .1s;
+         -o-transition-delay: .1s;
+            transition-delay: .1s;
 }
 .reveal-2 {
-    transition-delay: .2s;
+    -webkit-transition-delay: .2s;
+         -o-transition-delay: .2s;
+            transition-delay: .2s;
 }
 .reveal-3 {
-    transition-delay: .3s;
+    -webkit-transition-delay: .3s;
+         -o-transition-delay: .3s;
+            transition-delay: .3s;
 }

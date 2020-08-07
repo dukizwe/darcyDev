@@ -8,7 +8,8 @@
 .activities-content {
   background: var(--section-backgground);
   padding: 10px 0;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 .activities-title {
   text-align: center;
@@ -17,47 +18,73 @@
   color: var(--text);
 }
 .activities {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  flex-flow: row wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .activities > div {
   width: 300px;
   height: 200px;
   overflow: hidden;
   margin: 5px 3px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
   &.visible {
     .description {
-      transform: translate(0, -100%);
+      -webkit-transform: translate(0, -100%);
+          -ms-transform: translate(0, -100%);
+              transform: translate(0, -100%);
     }
     img {
-      filter: brightness(0.5) blur(1px) brightness(0.5);
-      transform: scale(1.1);
+      -webkit-filter: brightness(0.5) blur(1px) brightness(0.5);
+              filter: brightness(0.5) blur(1px) brightness(0.5);
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1);
     }
     a.site-direction {
-      transform: translateX(0);
+      -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+              transform: translateX(0);
       opacity: 1;
     }
   }
 }
 .activities > div:hover {
   img {
-    filter: brightness(0.5) blur(1px) brightness(0.5);
-    transform: scale(1.1);
+    -webkit-filter: brightness(0.5) blur(1px) brightness(0.5);
+            filter: brightness(0.5) blur(1px) brightness(0.5);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
   }
   .description {
-    transform: translate(0, -100%);
+    -webkit-transform: translate(0, -100%);
+        -ms-transform: translate(0, -100%);
+            transform: translate(0, -100%);
   }
   a.site-direction {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
 }
 .activities-container img {
   width: 100%;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
   border: 1px solid #00000014;
 }
@@ -67,8 +94,14 @@
   padding: 10px 5px;
   color: #fff;
   text-align: center;
+  -webkit-transition: -webkit-transform .18s cubic-bezier(0.42, 0, 0.61, 1.26) .18s;
+  transition: -webkit-transform .18s cubic-bezier(0.42, 0, 0.61, 1.26) .18s;
+  -o-transition: transform .18s cubic-bezier(0.42, 0, 0.61, 1.26) .18s;
   transition: transform .18s cubic-bezier(0.42, 0, 0.61, 1.26) .18s;
-  transform-origin: bottom;
+  transition: transform .18s cubic-bezier(0.42, 0, 0.61, 1.26) .18s, -webkit-transform .18s cubic-bezier(0.42, 0, 0.61, 1.26) .18s;
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
 }
 .activities .description .title {
   font-size: 20px;
@@ -84,13 +117,21 @@
   display: block;
   font-size: 40px;
   opacity: 0;
-  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
   padding: 5px 10px;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
   transition: all 0.8s;
-  transition-delay: .18s;
+  -webkit-transition-delay: .18s;
+       -o-transition-delay: .18s;
+          transition-delay: .18s;
   text-decoration: none;
 }
 .activities .description a.site-direction:hover {
   opacity: 0.5;
-  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }

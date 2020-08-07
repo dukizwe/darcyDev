@@ -1,6 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*home*/
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 a:hover,
 a:focus,
@@ -26,12 +34,20 @@ html, body {
     margin: auto;
     .section-content {
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
         .presentation-section {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             width: 70%;
             text-align: center;
@@ -81,24 +97,32 @@ html, body {
                     font-size: 19px;
                     color: var(--text);
                     button {
+                        -webkit-transition: -webkit-transform 0.2s ease-out 0s;
+                        transition: -webkit-transform 0.2s ease-out 0s;
+                        -o-transition: transform 0.2s ease-out 0s;
                         transition: transform 0.2s ease-out 0s;
+                        transition: transform 0.2s ease-out 0s, -webkit-transform 0.2s ease-out 0s;
                         color: #000;
                         letter-spacing: 1.5px;
                         font-family: "PT Sans", sans-serif;
                         cursor: pointer;
-                        box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
+                        -webkit-box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
+                                box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
                         outline: none;
                         border-width: 1px;
                         font-size: 18px;
                         border-style: initial;
                         border-color: transparent;
-                        border-image: initial;
+                        -o-border-image: initial;
+                           border-image: initial;
                         border-radius: 10rem;
                         padding: 1rem 2rem;
                         margin: 0rem;
                         &:hover,
                         &:focus {
-                            transform: translateY(-3px);
+                            -webkit-transform: translateY(-3px);
+                                -ms-transform: translateY(-3px);
+                                    transform: translateY(-3px);
                             cursor: pointer;
                         }
                     }
@@ -114,6 +138,8 @@ html, body {
                     }
                 }
                 .editor-line {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
                     background: #1b1435;
                     padding: 10px;
@@ -139,9 +165,11 @@ html, body {
                         background: #ccc;
                         height: 22px;
                         margin: 0px 0 0 2px;
-                        animation: blink 1s infinite;
+                        -webkit-animation: blink 1s infinite;
+                                animation: blink 1s infinite;
                         &.typing {
-                            animation: none;
+                            -webkit-animation: none;
+                                    animation: none;
                         }
                     }
                 }
@@ -159,18 +187,25 @@ html, body {
         .my-picture {
             width: 35%;
             padding: 5px 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             overflow: hidden;
             border-radius: 10px;
-            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
+                    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
             &:hover {
                 .image-1 {
                     margin-left: -100%;
                 }
             }
             .image-1  {
+                -webkit-transition: margin-left .5s;
+                -o-transition: margin-left .5s;
                 transition: margin-left .5s;
-                transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+                -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+                     -o-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+                        transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
                 &.hidden {
                     margin-left: -100%;
                 }
@@ -190,11 +225,20 @@ html, body {
         height: 18px;
         bottom: 3%;
         left: 50%;
-        animation: goDown 1s linear infinite;
+        -webkit-animation: goDown 1s linear infinite;
+                animation: goDown 1s linear infinite;
         a {
             color: #1890ff;
         }
     }
+}
+
+@-webkit-keyframes blink {
+    0% {background: #ccc}
+    45% {background: #ccc;}
+    50% {background: transparent;}
+    99% {background: transparent;}
+    100% {background: #ccc;}
 }
 
 @keyframes blink {
@@ -204,14 +248,31 @@ html, body {
     99% {background: transparent;}
     100% {background: #ccc;}
 }
-@keyframes goDown {
+@-webkit-keyframes goDown {
     15%, 20% {
-        transform: translateY(-4px);
+        -webkit-transform: translateY(-4px);
+                transform: translateY(-4px);
     }
     50% {
-        transform: translateY(4px);
+        -webkit-transform: translateY(4px);
+                transform: translateY(4px);
     }
      100% {
-        transform: translateY(4px);
+        -webkit-transform: translateY(4px);
+                transform: translateY(4px);
+    }
+}
+@keyframes goDown {
+    15%, 20% {
+        -webkit-transform: translateY(-4px);
+                transform: translateY(-4px);
+    }
+    50% {
+        -webkit-transform: translateY(4px);
+                transform: translateY(4px);
+    }
+     100% {
+        -webkit-transform: translateY(4px);
+                transform: translateY(4px);
     }
 }

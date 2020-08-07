@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 /*culture*/
 .culture-container {
@@ -13,9 +20,12 @@
   .culture-content {
     background: var(--section-backgground);
     padding: 10px 0;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
   }
   nav {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     margin: auto;
     a {
@@ -37,18 +47,28 @@
   .playlist-direction {
     position: absolute;
     background: #000;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     border-radius: 4px;
     padding: .5em 1em !important;
     font-size: 13px;
+    -webkit-transition: all .18s ease-out .18s;
+    -o-transition: all .18s ease-out .18s;
     transition: all .18s ease-out .18s;
-    transform: translate(-10%, -40px);
-    transform-origin: bottom;
+    -webkit-transform: translate(-10%, -40px);
+        -ms-transform: translate(-10%, -40px);
+            transform: translate(-10%, -40px);
+    -webkit-transform-origin: bottom;
+        -ms-transform-origin: bottom;
+            transform-origin: bottom;
     opacity: 0;
     z-index: -1;
     &.active{
       opacity: 1;
-      transform: translate(-10%, -60px);
+      -webkit-transform: translate(-10%, -60px);
+          -ms-transform: translate(-10%, -60px);
+              transform: translate(-10%, -60px);
       z-index: 1;
     }
 
@@ -61,11 +81,15 @@
       border-radius: 2px;
       left: 50%;
       top: 100%;
-      transform: translate(-50%, -50%) rotate(45deg);
+      -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          -ms-transform: translate(-50%, -50%) rotate(45deg);
+              transform: translate(-50%, -50%) rotate(45deg);
     }
     a {
       color: #fff !important;
       padding: 10px;
+      -webkit-transition: color .3s;
+      -o-transition: color .3s;
       transition: color .3s;
       &:hover {
         color: #777 !important;
@@ -84,6 +108,8 @@
       padding: 10px;
     }
     .editor > div {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       .editor-description {
         display: none;
@@ -92,12 +118,17 @@
         color: var(--text);
         width: 45%;
         left: 37%;
-        transform: translateY(-45%);
+        -webkit-transform: translateY(-45%);
+            -ms-transform: translateY(-45%);
+                transform: translateY(-45%);
         padding: 2em;
         border-radius: 5px;
         z-index: 10;
+        -webkit-transition: opacity 1s;
+        -o-transition: opacity 1s;
         transition: opacity 1s;
-        animation: lee 0.2s linear;
+        -webkit-animation: lee 0.2s linear;
+                animation: lee 0.2s linear;
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
         .desc-img {
@@ -123,7 +154,9 @@
           border-radius: 2px;
           left: -1%;
           top: 50%;
-          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+                  transform: rotate(45deg);
         }
       }
       &:hover {
@@ -137,8 +170,11 @@
           color: #3535ce;
         }
         .editor-description {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          animation: lee 0.2s linear;
+          -webkit-animation: lee 0.2s linear;
+                  animation: lee 0.2s linear;
         }
       }
     }
@@ -149,7 +185,11 @@
       color: #15153a;
       background: #dad8d8;
       text-align: center;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
       height: fit-content;
+      -webkit-transition: color 0.1s;
+      -o-transition: color 0.1s;
       transition: color 0.1s;
       &:hover,
       &:focus {
@@ -168,6 +208,15 @@
         margin-left: 5px;
       }
     }
+  }
+}
+@-webkit-keyframes lee {
+  from {
+    opacity: 0.5;
+    left: 37.5%;
+  } to {
+    opacity: 1;
+    left: 37%;
   }
 }
 @keyframes lee {

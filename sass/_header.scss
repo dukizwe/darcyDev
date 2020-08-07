@@ -1,11 +1,24 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import "theme";
 header {
     width: 100%;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
     &.hidden {
         position: fixed;
         top: 0;
-        transform: translateY(-130%);
+        -webkit-transform: translateY(-130%);
+            -ms-transform: translateY(-130%);
+                transform: translateY(-130%);
         z-index: 20;
         .content {
         }
@@ -19,25 +32,40 @@ header {
         }
     }
     .content {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         width: 80%;
         margin: auto;
         margin-top: 0.1px;
+        -webkit-transition-property: background,-webkit-transform;
+        transition-property: background,-webkit-transform;
+        -o-transition-property: transform,background;
         transition-property: transform,background;
+        transition-property: transform,background,-webkit-transform;
         nav {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
         }
         .site-brand {
             padding: 20px 0;
+            -webkit-transition: none;
+            -o-transition: none;
             transition: none;
             a {
                 text-decoration: none;
                 color: var(--text);
                 padding: 13px 10px;
                 font-size: 20px;
+                background: -o-linear-gradient(bottom, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;
                 background: linear-gradient(to top, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;
                 background-size: 0 100%;
+                -webkit-transition: background-size .3s;
+                -o-transition: background-size .3s;
                 transition: background-size .3s;
                 &.active {
                     background-size: 100% 100%;
@@ -51,10 +79,15 @@ header {
                 color: var(--text);
                 padding: 10px 5px;
                 font-size: 17px;
+                background: -o-linear-gradient(bottom, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;
                 background: linear-gradient(to top, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;
                 background-size: 0 100%;
+                -webkit-transition-property: background-size,border,border-radius,background,color;
+                -o-transition-property: background-size,border,border-radius,background,color;
                 transition-property: background-size,border,border-radius,background,color;
-                transition-duration: 0.3s;
+                -webkit-transition-duration: 0.3s;
+                     -o-transition-duration: 0.3s;
+                        transition-duration: 0.3s;
                 &.active,&:focus,&:hover {
                     background-size: 100% 100%;
                     border: none;
@@ -74,8 +107,12 @@ header {
                 cursor: pointer;
                 border-radius: 20px;
                 overflow: hidden; 
+                -webkit-transition: ease-in 0.2s; 
+                -o-transition: ease-in 0.2s; 
                 transition: ease-in 0.2s;
-                appearance: none;
+                -webkit-appearance: none;
+                   -moz-appearance: none;
+                        appearance: none;
                 outline: none;
                 &:focus,
                 &:hover {
@@ -96,9 +133,13 @@ header {
                     height: 15px;
                     border-radius: 10px;
                     top: 50%;
-                    transform: translate(-50%, -50%);
+                    -webkit-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                            transform: translate(-50%, -50%);
                     left: 35%;
                     background: var(--input-toggle-button);
+                    -webkit-transition: 0.1s;
+                    -o-transition: 0.1s;
                     transition: 0.1s;
                 }
             }

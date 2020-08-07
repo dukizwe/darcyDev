@@ -33,11 +33,13 @@
 .emoji--yay {
 	&:after {
 		content: '';
-		animation: yay-reverse 1s linear infinite;
+		-webkit-animation: yay-reverse 1s linear infinite;
+		        animation: yay-reverse 1s linear infinite;
 	}
   
 	.emoji__face {
-		animation: yay 1s linear infinite alternate;
+		-webkit-animation: yay 1s linear infinite alternate;
+		        animation: yay 1s linear infinite alternate;
 	}
 
 	.emoji__eyebrows {
@@ -47,7 +49,8 @@
 		width: 6px;
 		border-radius: 50%;
 		background: transparent;
-		box-shadow: -6px 0 0 0 $emoji-black-color, -36px 0 0 0px $emoji-black-color, 6px 0 0 0 $emoji-black-color, 36px 0 0 0px $emoji-black-color;
+		-webkit-box-shadow: -6px 0 0 0 $emoji-black-color, -36px 0 0 0px $emoji-black-color, 6px 0 0 0 $emoji-black-color, 36px 0 0 0px $emoji-black-color;
+		        box-shadow: -6px 0 0 0 $emoji-black-color, -36px 0 0 0px $emoji-black-color, 6px 0 0 0 $emoji-black-color, 36px 0 0 0px $emoji-black-color;
 		
 		&:before, &:after {
 			width: 36px;
@@ -55,7 +58,8 @@
 			border-radius: 60px 60px 0 0;
 			background: transparent;
 			border: 6px solid black;
-			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			        box-sizing: border-box;
 			border-bottom: 0;
 			bottom: 3px;
 			left: calc(50% - 18px);
@@ -83,7 +87,8 @@
 		  border-radius: 50%;
 		  background: transparent;  
 		  border: 6px solid $emoji-black-color;
-		  box-sizing: border-box;
+		  -webkit-box-sizing: border-box;
+		          box-sizing: border-box;
 		  border-top-color: transparent;
 		  border-left-color: transparent;
 		  border-right-color: transparent;
@@ -97,7 +102,8 @@
 			border-radius: 50%;
 			bottom: 5px;
 			left: calc(50% - 3px);
-			box-shadow: -25px 0 0 0 $emoji-black-color, 25px 0 0 0 $emoji-black-color, -35px -2px 30px 10px $emoji-angry-color, 35px -2px 30px 10px $emoji-angry-color;
+			-webkit-box-shadow: -25px 0 0 0 $emoji-black-color, 25px 0 0 0 $emoji-black-color, -35px -2px 30px 10px $emoji-angry-color, 35px -2px 30px 10px $emoji-angry-color;
+			        box-shadow: -25px 0 0 0 $emoji-black-color, 25px 0 0 0 $emoji-black-color, -35px -2px 30px 10px $emoji-angry-color, 35px -2px 30px 10px $emoji-angry-color;
 		}
 	}
 }
@@ -107,7 +113,8 @@
 		content: '';
 	}
   .emoji__face {
-	animation: wow-face 3s linear infinite;
+	-webkit-animation: wow-face 3s linear infinite;
+	        animation: wow-face 3s linear infinite;
   }	
   
   .emoji__eyebrows {
@@ -116,14 +123,17 @@
 		width: 2px;
 		border-radius: 50%;
 		background: transparent;
-		box-shadow: -4px 0 0 0 $emoji-black-color, -9px 0 0 0 $emoji-black-color, 9px 0 0 0 $emoji-black-color, 14px 0 0 0 $emoji-black-color;
-		animation: wow-brow 3s linear infinite;
+		-webkit-box-shadow: -4px 0 0 0 $emoji-black-color, -9px 0 0 0 $emoji-black-color, 9px 0 0 0 $emoji-black-color, 14px 0 0 0 $emoji-black-color;
+		        box-shadow: -4px 0 0 0 $emoji-black-color, -9px 0 0 0 $emoji-black-color, 9px 0 0 0 $emoji-black-color, 14px 0 0 0 $emoji-black-color;
+		-webkit-animation: wow-brow 3s linear infinite;
+		        animation: wow-brow 3s linear infinite;
 	
 		&:before, &:after {
 			width: 9px;
 			height: 8px;
 			border: 2px solid $emoji-black-color;
-			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			        box-sizing: border-box;
 			border-radius: 50%;
 			border-bottom-color: transparent;
 			border-left-color: transparent;
@@ -148,7 +158,8 @@
 		top: 11px;
 		border-radius: 50%;
 		background: transparent;
-		box-shadow: 5px 0 0 0 $emoji-black-color, -11px 0 0 0 $emoji-black-color;
+		-webkit-box-shadow: 5px 0 0 0 $emoji-black-color, -11px 0 0 0 $emoji-black-color;
+		        box-shadow: 5px 0 0 0 $emoji-black-color, -11px 0 0 0 $emoji-black-color;
 	}
  
 	.emoji__mouth {
@@ -158,23 +169,45 @@
 		top: 50%;
 		border-radius: 50%;
 		background: $emoji-black-color;
-		animation: wow-mouth 3s linear infinite;
+		-webkit-animation: wow-mouth 3s linear infinite;
+		        animation: wow-mouth 3s linear infinite;
 	}
 }
+@-webkit-keyframes yay {
+	25% {-webkit-transform: rotate(-15deg);transform: rotate(-15deg);}
+	75% {-webkit-transform: rotate(15deg);transform: rotate(15deg);}
+}
 @keyframes yay {
-	25% {transform: rotate(-15deg);}
-	75% {transform: rotate(15deg);}
+	25% {-webkit-transform: rotate(-15deg);transform: rotate(-15deg);}
+	75% {-webkit-transform: rotate(15deg);transform: rotate(15deg);}
+} 
+
+@-webkit-keyframes wow-face {
+	15%, 25% {-webkit-transform: rotate(10deg) translateX(-10px);transform: rotate(10deg) translateX(-10px);}
+	45%, 65% {-webkit-transform: rotate(-10deg) translateX(10px);transform: rotate(-10deg) translateX(10px);}
+	75%, 100% {-webkit-transform: rotate(0deg) translateX(0);transform: rotate(0deg) translateX(0);}
 } 
 
 @keyframes wow-face {
-	15%, 25% {transform: rotate(10deg) translateX(-10px);}
-	45%, 65% {transform: rotate(-10deg) translateX(10px);}
-	75%, 100% {transform: rotate(0deg) translateX(0);}
+	15%, 25% {-webkit-transform: rotate(10deg) translateX(-10px);transform: rotate(10deg) translateX(-10px);}
+	45%, 65% {-webkit-transform: rotate(-10deg) translateX(10px);transform: rotate(-10deg) translateX(10px);}
+	75%, 100% {-webkit-transform: rotate(0deg) translateX(0);transform: rotate(0deg) translateX(0);}
+}
+
+@-webkit-keyframes wow-brow {
+	15%, 65% {top: 8px;}
+	75%, 100%, 0% {top: 5px;}
 }
 
 @keyframes wow-brow {
 	15%, 65% {top: 8px;}
 	75%, 100%, 0% {top: 5px;}
+}
+
+@-webkit-keyframes wow-mouth {
+	10%, 30% {width: 6px; height: 8px; left: calc(50% - 3px);}
+	50%, 70% {width: 9px; height: 12px; left: calc(50% - 4px);}
+	75%, 100% {height: 15px;}
 }
 
 @keyframes wow-mouth {
