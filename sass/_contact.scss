@@ -155,6 +155,7 @@
         .contact-info1 {
           a {
             text-decoration: none;
+            cursor: pointer;
             &:hover i,
             &:hover span,
             &:focus i,
@@ -163,6 +164,27 @@
             }
             &:focus {
               outline: none;
+            }
+            &.phone-number {
+              &.copied {
+                span.alert {
+                  transform: translate(-100%, -68px);
+                  opacity: 1;
+                }
+              }
+              span.alert {    
+                position: absolute;
+                background: #000;
+                color: #fff;
+                width: max-content;
+                border-radius: 4px;
+                padding: 0.5em 1em !important;
+                font-size: 15px;
+                transition: all 0.18s ease-out 0.18s;
+                transform: translate(-100%, -20px);
+                transform-origin: bottom;
+                opacity: 0;
+              }
             }
           }
           i {

@@ -4,6 +4,7 @@ import Time from './modules/Time.js'
 import sticky from './modules/Sticky.js'
 import scrollSpy from './modules/ScrollSpy.js'
 import Tab from './modules/Tab.js'
+import Copied from './modules/Copied.js'
 import Typed from './modules/Typed.js'
 $(function() {
     const time = new Time()
@@ -17,4 +18,5 @@ $(function() {
     })
     reveal()
     Tab()
+    Copied()
 })

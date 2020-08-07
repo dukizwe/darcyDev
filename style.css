@@ -1210,12 +1210,30 @@ html, body {
 }
 .contact-container .contact-content .contact-info .contact-info1 a {
   text-decoration: none;
+  cursor: pointer;
 }
 .contact-container .contact-content .contact-info .contact-info1 a:hover i, .contact-container .contact-content .contact-info .contact-info1 a:hover span, .contact-container .contact-content .contact-info .contact-info1 a:focus i, .contact-container .contact-content .contact-info .contact-info1 a:focus span {
   color: #8b8b8b;
 }
 .contact-container .contact-content .contact-info .contact-info1 a:focus {
   outline: none;
+}
+.contact-container .contact-content .contact-info .contact-info1 a.phone-number.copied span.alert {
+  transform: translate(-100%, -68px);
+  opacity: 1;
+}
+.contact-container .contact-content .contact-info .contact-info1 a.phone-number span.alert {
+  position: absolute;
+  background: #000;
+  color: #fff;
+  width: max-content;
+  border-radius: 4px;
+  padding: 0.5em 1em !important;
+  font-size: 15px;
+  transition: all 0.18s ease-out 0.18s;
+  transform: translate(-100%, -20px);
+  transform-origin: bottom;
+  opacity: 0;
 }
 .contact-container .contact-content .contact-info .contact-info1 i {
   display: block;
