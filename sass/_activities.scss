@@ -128,6 +128,10 @@
        -o-transition-delay: .18s;
           transition-delay: .18s;
   text-decoration: none;
+  i {
+    font-size: 30px;
+    color: #2291b1;
+  }
 }
 .activities .description a.site-direction:hover {
   opacity: 0.5;
