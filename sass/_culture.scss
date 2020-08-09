@@ -131,6 +131,27 @@
                 animation: lee 0.2s linear;
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
+        a {
+            text-decoration: none;
+            color: #2291b1 !important;
+            padding: 0 5px;
+            font-size: 17px;
+            background: -o-linear-gradient(bottom, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;
+            background: linear-gradient(to top, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;
+            background-size: 0 100%;
+            -webkit-transition-property: background-size,border,border-radius,background,color;
+            -o-transition-property: background-size,border,border-radius,background,color;
+            transition-property: background-size,border,border-radius,background,color;
+            -webkit-transition-duration: 0.3s;
+                 -o-transition-duration: 0.3s;
+                    transition-duration: 0.3s;
+            &.active,&:focus,&:hover {
+                background-size: 100% 100%;
+                border: none;
+                outline: none;
+                color: #2291b1;
+            }
+        }
         .desc-img {
           img {
             width: 50px;

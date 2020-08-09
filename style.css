@@ -807,6 +807,27 @@ html, body {
   padding: 0 50px 0 50px;
   color: var(--text);
 }
+.competences-container .languages-container .lang-description a {
+  text-decoration: none;
+  color: #2291b1;
+  padding: 0 5px;
+  font-size: 17px;
+  background: -o-linear-gradient(bottom, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;
+  background: linear-gradient(to top, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition-property: background-size, border, border-radius, background, color;
+  -o-transition-property: background-size, border, border-radius, background, color;
+  transition-property: background-size, border, border-radius, background, color;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.competences-container .languages-container .lang-description a.active, .competences-container .languages-container .lang-description a:focus, .competences-container .languages-container .lang-description a:hover {
+  background-size: 100% 100%;
+  border: none;
+  outline: none;
+  color: #2291b1;
+}
 .competences-container .languages-container .title {
   color: #777;
   text-align: center;
@@ -1136,6 +1157,10 @@ html, body {
   transition-delay: 0.18s;
   text-decoration: none;
 }
+.activities .description a.site-direction i {
+  font-size: 30px;
+  color: #2291b1;
+}
 
 .activities .description a.site-direction:hover {
   opacity: 0.5;
@@ -1273,6 +1298,27 @@ html, body {
   animation: lee 0.2s linear;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+}
+.culture-container .frequency-questions .editor > div .editor-description a {
+  text-decoration: none;
+  color: #2291b1 !important;
+  padding: 0 5px;
+  font-size: 17px;
+  background: -o-linear-gradient(bottom, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;
+  background: linear-gradient(to top, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition-property: background-size, border, border-radius, background, color;
+  -o-transition-property: background-size, border, border-radius, background, color;
+  transition-property: background-size, border, border-radius, background, color;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.culture-container .frequency-questions .editor > div .editor-description a.active, .culture-container .frequency-questions .editor > div .editor-description a:focus, .culture-container .frequency-questions .editor > div .editor-description a:hover {
+  background-size: 100% 100%;
+  border: none;
+  outline: none;
+  color: #2291b1;
 }
 .culture-container .frequency-questions .editor > div .editor-description .desc-img img {
   width: 50px;
