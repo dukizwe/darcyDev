@@ -13,7 +13,7 @@
   margin: auto;
   .title {
     text-align: center;
-    font-size: 25px;
+    font-size: 24px;
     margin-bottom: 5px;
     color: var(--text);
   }
@@ -32,7 +32,7 @@
       text-decoration: none;
       padding: 5px 10px;
       color: #777;
-      font-size: 17px;
+      font-size: 16px;
       
       &.active {
         color: var(--text);
@@ -52,7 +52,6 @@
     width: max-content;
     border-radius: 4px;
     padding: .5em 1em !important;
-    font-size: 13px;
     -webkit-transition: all .18s ease-out .18s;
     -o-transition: all .18s ease-out .18s;
     transition: all .18s ease-out .18s;
@@ -88,6 +87,7 @@
     a {
       color: #fff !important;
       padding: 10px;
+      font-size: 16px;
       -webkit-transition: color .3s;
       -o-transition: color .3s;
       transition: color .3s;
@@ -102,7 +102,7 @@
     padding: 1em;
     margin-top: 30px;
     width: 90%;
-    font-size: 19px;
+    font-size: 18px;
     > div {
       color: #000;
       padding: 10px;
@@ -129,14 +129,13 @@
         transition: opacity 1s;
         -webkit-animation: lee 0.2s linear;
                 animation: lee 0.2s linear;
-        font-family: 'Roboto', sans-serif;
-        font-size: 18px;
+        font-size: 17px;
         a {
             display: inline;
             text-decoration: none;
             color: #2291b1 !important;
             padding: 0 5px;
-            font-size: 17px;
+            font-size: 16px;
             background: -o-linear-gradient(bottom, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;
             background: linear-gradient(to top, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;
             background-size: 0 100%;
