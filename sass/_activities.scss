@@ -13,7 +13,7 @@
 }
 .activities-title {
   text-align: center;
-  font-size: 25px;
+  font-size: 24px;
   margin-bottom: 5px;
   color: var(--text);
 }
@@ -104,18 +104,17 @@
           transform-origin: bottom;
 }
 .activities .description .title {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
   color: #39ad8c;
 }
 .activities .description p {
-  font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 .activities .description a.site-direction {
   color: #ffbc00;
   display: block;
-  font-size: 40px;
+  font-size: 39px;
   opacity: 0;
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
@@ -129,7 +128,7 @@
           transition-delay: .18s;
   text-decoration: none;
   i {
-    font-size: 30px;
+    font-size: 29px;
     color: #2291b1;
   }
 }

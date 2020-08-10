@@ -9,7 +9,7 @@
     }
     .competences-title {
         text-align: center;
-        font-size: 25px;
+        font-size: 24px;
         margin-bottom: 5px;
         color: var(--text);
     }
@@ -41,16 +41,15 @@
 
         .lang-description {
             text-align: center;
-            font-family: 'Roboto', sans-serif;
             margin-top: 10px;
-            font-size: 18px;
+            font-size: 17px;
             padding: 0 50px 0 50px;
             color: var(--text);
             a {
                 text-decoration: none;
                 color: #2291b1;
                 padding: 0 5px;
-                font-size: 17px;
+                font-size: 16px;
                 background: -o-linear-gradient(bottom, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;
                 background: linear-gradient(to top, #089ECA 0%, #089ECA 1px, transparent 1px) no-repeat;
                 background-size: 0 100%;
@@ -71,7 +70,7 @@
         .title {
             color: #777;
             text-align: center;
-            font-size: 20px;
+            font-size: 19px;
             margin-bottom: 10px;
         }
         .structure-langs {
@@ -145,7 +144,7 @@
             justify-content: center;
     background: var(--section-backgground);
     border-radius: 4px;
-    font-size: 18px;
+    font-size: 17px;
     -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
             box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
 }
@@ -164,7 +163,7 @@
 .others-title{
     text-align: center;
     color: var(--text);
-    font-size: 20px;
+    font-size: 19px;
     padding: 10px;
 }
 .others .software,
@@ -177,7 +176,7 @@
 .others .languages .title {
     margin-top: 15px;
     color: var(--text);
-    font-size: 18px;
+    font-size: 17px;
     margin-right: 5px;
 }
 .others img  {
@@ -200,7 +199,7 @@
     width: max-content;
     border-radius: 4px;
     padding: .5em 1em;
-    font-size: 13px;
+    font-size: 12px;
     -webkit-transition: all .18s ease-out .18s;
     -o-transition: all .18s ease-out .18s;
     transition: all .18s ease-out .18s;

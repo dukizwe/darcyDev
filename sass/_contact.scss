@@ -12,7 +12,7 @@
   margin: auto;
   .title {
     text-align: center;
-    font-size: 25px;
+    font-size: 24px;
     margin-bottom: 5px;
     color: var(--text);
   }
@@ -30,7 +30,7 @@
       left: 11px;
       bottom: 35px;
       color: #949494;
-      font-size: 17px;
+      font-size: 16px;
       cursor: pointer;
       pointer-events: none;
       -webkit-transition: 0.3s;
@@ -60,8 +60,7 @@
         width: 100%;
         border: 1px solid #14daa15c;
         border-radius: 5px;
-        font-family: sans-serif;
-        font-size: 17px;
+        font-size: 16px;
         background: #14daa15c;
         -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.2);
                 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -98,8 +97,7 @@
         height: 100%;
         border: 1px solid #14daa15c;
         border-radius: 5px;
-        font-family: sans-serif;
-        font-size: 17px;
+        font-size: 16px;
         resize: none;
         background: #14daa15c;
         -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -142,7 +140,7 @@
           border: 1px solid #97afad;
           background: var(--initial_color);
           color: var(--text);
-          font-size: 16px;
+          font-size: 15px;
           padding: 10px;
           border-radius: 3px;
           -webkit-transition-duration: 0.4s;
@@ -169,7 +167,7 @@
     -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
             box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.2);
     font-family: 'Roboto', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     
     .thanking {
       width: 50%;
@@ -236,7 +234,7 @@
           display: block;
           margin-bottom: 5px;
           color: #fff;
-          font-size: 25px;
+          font-size: 24px;
           -webkit-transition: color 0.3s;
           -o-transition: color 0.3s;
           transition: color 0.3s;
@@ -255,7 +253,7 @@
 
       .contact-info2 {
         margin-top: 15px;
-        font-size: 20px;
+        font-size: 19px;
         a {
           position: relative;
           margin-left: 5px;
